@@ -1,0 +1,2564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		1EE2B0F038C61A6FA714385D /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BB4C6C966E0340480416DB /* Pods_Runner.framework */; };
+		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
+		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		726919B0BC04F471984E233C /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C71367F3D132A53233DC85B /* Pods_RunnerTests.framework */; };
+		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		9A9BA3462A947474004A7A59 /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA1CA2A947112004A7A59 /* whisper.cpp */; };
+		9A9BA3502A9474B5004A7A59 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA1B02A947112004A7A59 /* ggml.c */; };
+		9A9BA4122A968DF7004A7A59 /* src_linear.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA4072A968D6D004A7A59 /* src_linear.c */; };
+		9A9BA4132A968DF7004A7A59 /* samplerate.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA4032A968D6D004A7A59 /* samplerate.c */; };
+		9A9BA4142A968DF7004A7A59 /* src_sinc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA4052A968D6D004A7A59 /* src_sinc.c */; };
+		9A9BA4152A968DF7004A7A59 /* src_zoh.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA4062A968D6D004A7A59 /* src_zoh.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		331C8085294A63A400263BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C146ED1CF9000F007C117D;
+			remoteInfo = Runner;
+		};
+		9A9BA32F2A947113004A7A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9BA2572A947112004A7A59 /* whisper.objc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18627C7629052BDF00BD2A04;
+			remoteInfo = whisper.objc;
+		};
+		9A9BA3322A947113004A7A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9BA2112A947112004A7A59 /* whisper.swiftui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AAC5D9729539CCF003032C3;
+			remoteInfo = whisper.swiftui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		184562B6D1448498848ED8B1 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
+		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		6C71367F3D132A53233DC85B /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		95D1EAEF850A978F7FDF544C /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
+		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
+		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E74DEA5D07F673DB59B323 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		9A9BA1972A947112004A7A59 /* whisper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whisper.h; sourceTree = "<group>"; };
+		9A9BA1982A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1992A947112004A7A59 /* ggml-opencl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-opencl.h"; sourceTree = "<group>"; };
+		9A9BA19A2A947112004A7A59 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9A9BA19C2A947112004A7A59 /* BuildTypes.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = BuildTypes.cmake; sourceTree = "<group>"; };
+		9A9BA19D2A947112004A7A59 /* DefaultTargetOptions.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultTargetOptions.cmake; sourceTree = "<group>"; };
+		9A9BA19E2A947112004A7A59 /* GitVars.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitVars.cmake; sourceTree = "<group>"; };
+		9A9BA19F2A947112004A7A59 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9A9BA1A12A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1A22A947112004A7A59 /* run-tests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "run-tests.sh"; sourceTree = "<group>"; };
+		9A9BA1A32A947112004A7A59 /* es-0-ref.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "es-0-ref.txt"; sourceTree = "<group>"; };
+		9A9BA1A42A947112004A7A59 /* en-1-ref.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "en-1-ref.txt"; sourceTree = "<group>"; };
+		9A9BA1A52A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA1A62A947112004A7A59 /* en-0-ref.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "en-0-ref.txt"; sourceTree = "<group>"; };
+		9A9BA1A72A947112004A7A59 /* en-2-ref.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "en-2-ref.txt"; sourceTree = "<group>"; };
+		9A9BA1A82A947112004A7A59 /* test-whisper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "test-whisper.js"; sourceTree = "<group>"; };
+		9A9BA1AA2A947112004A7A59 /* whisper-openvino-encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whisper-openvino-encoder.h"; sourceTree = "<group>"; };
+		9A9BA1AB2A947112004A7A59 /* whisper-openvino-encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "whisper-openvino-encoder.cpp"; sourceTree = "<group>"; };
+		9A9BA1AC2A947112004A7A59 /* whisper.cpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.cpp.xcodeproj; sourceTree = "<group>"; };
+		9A9BA1AF2A947112004A7A59 /* ggml-metal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = "ggml-metal.metal"; sourceTree = "<group>"; };
+		9A9BA1B02A947112004A7A59 /* ggml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
+		9A9BA1B12A947112004A7A59 /* ggml-opencl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-opencl.cpp"; sourceTree = "<group>"; };
+		9A9BA1B32A947112004A7A59 /* for-tests-ggml-tiny.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-tiny.en.bin"; sourceTree = "<group>"; };
+		9A9BA1B42A947112004A7A59 /* for-tests-ggml-medium.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-medium.bin"; sourceTree = "<group>"; };
+		9A9BA1B52A947112004A7A59 /* for-tests-ggml-tiny.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-tiny.bin"; sourceTree = "<group>"; };
+		9A9BA1B62A947112004A7A59 /* convert-h5-to-ggml.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "convert-h5-to-ggml.py"; sourceTree = "<group>"; };
+		9A9BA1B72A947112004A7A59 /* for-tests-ggml-base.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-base.en.bin"; sourceTree = "<group>"; };
+		9A9BA1B82A947112004A7A59 /* download-ggml-model.cmd */ = {isa = PBXFileReference; lastKnownFileType = text; path = "download-ggml-model.cmd"; sourceTree = "<group>"; };
+		9A9BA1B92A947112004A7A59 /* for-tests-ggml-large.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-large.bin"; sourceTree = "<group>"; };
+		9A9BA1BA2A947112004A7A59 /* generate-coreml-model.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-coreml-model.sh"; sourceTree = "<group>"; };
+		9A9BA1BB2A947112004A7A59 /* for-tests-ggml-small.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-small.bin"; sourceTree = "<group>"; };
+		9A9BA1BC2A947112004A7A59 /* convert-pt-to-ggml.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "convert-pt-to-ggml.py"; sourceTree = "<group>"; };
+		9A9BA1BD2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1BE2A947112004A7A59 /* for-tests-ggml-base.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-base.bin"; sourceTree = "<group>"; };
+		9A9BA1BF2A947112004A7A59 /* generate-coreml-interface.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-coreml-interface.sh"; sourceTree = "<group>"; };
+		9A9BA1C02A947112004A7A59 /* download-ggml-model.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "download-ggml-model.sh"; sourceTree = "<group>"; };
+		9A9BA1C12A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA1C22A947112004A7A59 /* for-tests-ggml-small.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-small.en.bin"; sourceTree = "<group>"; };
+		9A9BA1C32A947112004A7A59 /* download-coreml-model.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "download-coreml-model.sh"; sourceTree = "<group>"; };
+		9A9BA1C42A947112004A7A59 /* ggml_to_pt.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ggml_to_pt.py; sourceTree = "<group>"; };
+		9A9BA1C52A947112004A7A59 /* convert-whisper-to-openvino.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "convert-whisper-to-openvino.py"; sourceTree = "<group>"; };
+		9A9BA1C62A947112004A7A59 /* for-tests-ggml-medium.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "for-tests-ggml-medium.en.bin"; sourceTree = "<group>"; };
+		9A9BA1C72A947112004A7A59 /* openvino-conversion-requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "openvino-conversion-requirements.txt"; sourceTree = "<group>"; };
+		9A9BA1C82A947112004A7A59 /* convert-whisper-to-coreml.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "convert-whisper-to-coreml.py"; sourceTree = "<group>"; };
+		9A9BA1C92A947112004A7A59 /* ggml-metal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ggml-metal.m"; sourceTree = "<group>"; };
+		9A9BA1CA2A947112004A7A59 /* whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = whisper.cpp; sourceTree = "<group>"; };
+		9A9BA1CB2A947112004A7A59 /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		9A9BA1CC2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1CE2A947112004A7A59 /* whisper-encoder-impl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "whisper-encoder-impl.m"; sourceTree = "<group>"; };
+		9A9BA1CF2A947112004A7A59 /* whisper-encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whisper-encoder.h"; sourceTree = "<group>"; };
+		9A9BA1D02A947112004A7A59 /* whisper-encoder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "whisper-encoder.mm"; sourceTree = "<group>"; };
+		9A9BA1D12A947112004A7A59 /* whisper-decoder-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whisper-decoder-impl.h"; sourceTree = "<group>"; };
+		9A9BA1D22A947112004A7A59 /* whisper-encoder-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whisper-encoder-impl.h"; sourceTree = "<group>"; };
+		9A9BA1D32A947112004A7A59 /* whisper-decoder-impl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "whisper-decoder-impl.m"; sourceTree = "<group>"; };
+		9A9BA1D52A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1D62A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA1D72A947112004A7A59 /* jfk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jfk.wav; sourceTree = "<group>"; };
+		9A9BA1D82A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA1DA2A947112004A7A59 /* convert-all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "convert-all.sh"; sourceTree = "<group>"; };
+		9A9BA1DB2A947112004A7A59 /* bench-wts.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "bench-wts.sh"; sourceTree = "<group>"; };
+		9A9BA1DC2A947112004A7A59 /* sync-ggml.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "sync-ggml.sh"; sourceTree = "<group>"; };
+		9A9BA1DD2A947112004A7A59 /* sha-all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "sha-all.sh"; sourceTree = "<group>"; };
+		9A9BA1DE2A947112004A7A59 /* bench-all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "bench-all.sh"; sourceTree = "<group>"; };
+		9A9BA1DF2A947112004A7A59 /* quantize-all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quantize-all.sh"; sourceTree = "<group>"; };
+		9A9BA1E02A947112004A7A59 /* deploy-wasm.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "deploy-wasm.sh"; sourceTree = "<group>"; };
+		9A9BA1E32A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1E42A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1E52A947112004A7A59 /* quantize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = quantize.cpp; sourceTree = "<group>"; };
+		9A9BA1E62A947112004A7A59 /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		9A9BA1E82A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1E92A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1EA2A947112004A7A59 /* bench.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bench.cpp; sourceTree = "<group>"; };
+		9A9BA1EB2A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1ED2A947112004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA1EE2A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1EF2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1F02A947112004A7A59 /* index-tmpl.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-tmpl.html"; sourceTree = "<group>"; };
+		9A9BA1F22A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1F32A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1F42A947112004A7A59 /* stream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stream.cpp; sourceTree = "<group>"; };
+		9A9BA1F62A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1F82A947112004A7A59 /* whisper.spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = whisper.spec.js; sourceTree = "<group>"; };
+		9A9BA1F92A947112004A7A59 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		9A9BA1FA2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1FB2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA1FC2A947112004A7A59 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		9A9BA1FD2A947112004A7A59 /* addon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = addon.cpp; sourceTree = "<group>"; };
+		9A9BA1FE2A947112004A7A59 /* livestream.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = livestream.sh; sourceTree = "<group>"; };
+		9A9BA2002A947112004A7A59 /* whisper.nvim */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = whisper.nvim; sourceTree = "<group>"; };
+		9A9BA2012A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2022A947112004A7A59 /* whisper.vim */ = {isa = PBXFileReference; lastKnownFileType = text; path = whisper.vim; sourceTree = "<group>"; };
+		9A9BA2042A947112004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA2052A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2062A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2072A947112004A7A59 /* index-tmpl.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-tmpl.html"; sourceTree = "<group>"; };
+		9A9BA2082A947112004A7A59 /* twitch.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = twitch.sh; sourceTree = "<group>"; };
+		9A9BA2092A947112004A7A59 /* dr_wav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dr_wav.h; sourceTree = "<group>"; };
+		9A9BA20A2A947112004A7A59 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		9A9BA20C2A947112004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA20D2A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA20E2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA20F2A947112004A7A59 /* index-tmpl.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-tmpl.html"; sourceTree = "<group>"; };
+		9A9BA2112A947112004A7A59 /* whisper.swiftui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.swiftui.xcodeproj; sourceTree = "<group>"; };
+		9A9BA2142A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2162A947112004A7A59 /* LibWhisper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibWhisper.swift; sourceTree = "<group>"; };
+		9A9BA2172A947112004A7A59 /* WhisperCppDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhisperCppDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A9BA21A2A947112004A7A59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A9BA21D2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA21F2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2202A947112004A7A59 /* WhisperCppDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperCppDemoApp.swift; sourceTree = "<group>"; };
+		9A9BA2222A947112004A7A59 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		9A9BA2232A947112004A7A59 /* RiffWaveUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiffWaveUtils.swift; sourceTree = "<group>"; };
+		9A9BA2252A947112004A7A59 /* WhisperState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperState.swift; sourceTree = "<group>"; };
+		9A9BA2272A947112004A7A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9BA2292A947112004A7A59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A9BA22A2A947112004A7A59 /* WhisperCppDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhisperCppDemo.entitlements; sourceTree = "<group>"; };
+		9A9BA22C2A947112004A7A59 /* llama-util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-util.h"; sourceTree = "<group>"; };
+		9A9BA22D2A947112004A7A59 /* speak */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = speak; sourceTree = "<group>"; };
+		9A9BA22E2A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA22F2A947112004A7A59 /* llama.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llama.cpp; sourceTree = "<group>"; };
+		9A9BA2302A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2312A947112004A7A59 /* speak.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = speak.bat; sourceTree = "<group>"; };
+		9A9BA2322A947112004A7A59 /* speak.ps1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = speak.ps1; sourceTree = "<group>"; };
+		9A9BA2332A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2342A947112004A7A59 /* eleven-labs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "eleven-labs.py"; sourceTree = "<group>"; };
+		9A9BA2362A947112004A7A59 /* talk-alpaca.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "talk-alpaca.txt"; sourceTree = "<group>"; };
+		9A9BA2372A947112004A7A59 /* talk-llama.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "talk-llama.cpp"; sourceTree = "<group>"; };
+		9A9BA2382A947112004A7A59 /* llama.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llama.h; sourceTree = "<group>"; };
+		9A9BA2392A947112004A7A59 /* helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = helpers.js; sourceTree = "<group>"; };
+		9A9BA23B2A947112004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA23C2A947112004A7A59 /* gpt-2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gpt-2.cpp"; sourceTree = "<group>"; };
+		9A9BA23D2A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA23E2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA23F2A947112004A7A59 /* index-tmpl.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-tmpl.html"; sourceTree = "<group>"; };
+		9A9BA2402A947112004A7A59 /* gpt-2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gpt-2.h"; sourceTree = "<group>"; };
+		9A9BA2422A947112004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA2432A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2442A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2452A947112004A7A59 /* index-tmpl.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-tmpl.html"; sourceTree = "<group>"; };
+		9A9BA2462A947112004A7A59 /* generate-karaoke.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-karaoke.sh"; sourceTree = "<group>"; };
+		9A9BA2482A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2492A947112004A7A59 /* command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = command.cpp; sourceTree = "<group>"; };
+		9A9BA24A2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA24B2A947112004A7A59 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
+		9A9BA24C2A947112004A7A59 /* common-ggml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "common-ggml.cpp"; sourceTree = "<group>"; };
+		9A9BA24D2A947112004A7A59 /* common-ggml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "common-ggml.h"; sourceTree = "<group>"; };
+		9A9BA24E2A947112004A7A59 /* yt-wsp.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "yt-wsp.sh"; sourceTree = "<group>"; };
+		9A9BA24F2A947112004A7A59 /* common-sdl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "common-sdl.h"; sourceTree = "<group>"; };
+		9A9BA2502A947112004A7A59 /* common-sdl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "common-sdl.cpp"; sourceTree = "<group>"; };
+		9A9BA2522A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2532A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2542A947112004A7A59 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9A9BA2562A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2572A947112004A7A59 /* whisper.objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.objc.xcodeproj; sourceTree = "<group>"; };
+		9A9BA25B2A947112004A7A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A9BA25C2A947112004A7A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9BA25D2A947112004A7A59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A9BA25E2A947112004A7A59 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9A9BA2602A947112004A7A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A9BA2622A947112004A7A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A9BA2632A947112004A7A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A9BA2642A947112004A7A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A9BA2652A947112004A7A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A9BA2662A947112004A7A59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A9BA2672A947112004A7A59 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9A9BA26A2A947112004A7A59 /* proguard-rules.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = "proguard-rules.pro"; sourceTree = "<group>"; };
+		9A9BA26B2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA26C2A947112004A7A59 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		9A9BA2722A947112004A7A59 /* ExampleInstrumentedTest.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExampleInstrumentedTest.kt; sourceTree = "<group>"; };
+		9A9BA2772A947112004A7A59 /* ExampleUnitTest.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExampleUnitTest.kt; sourceTree = "<group>"; };
+		9A9BA27B2A947112004A7A59 /* ic_launcher_foreground.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ic_launcher_foreground.xml; sourceTree = "<group>"; };
+		9A9BA27C2A947112004A7A59 /* ic_launcher_background.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ic_launcher_background.xml; sourceTree = "<group>"; };
+		9A9BA27E2A947112004A7A59 /* colors.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
+		9A9BA27F2A947112004A7A59 /* themes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = themes.xml; sourceTree = "<group>"; };
+		9A9BA2802A947112004A7A59 /* strings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
+		9A9BA2822A947112004A7A59 /* backup_rules.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = backup_rules.xml; sourceTree = "<group>"; };
+		9A9BA2832A947112004A7A59 /* data_extraction_rules.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = data_extraction_rules.xml; sourceTree = "<group>"; };
+		9A9BA2852A947112004A7A59 /* ic_launcher.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ic_launcher.xml; sourceTree = "<group>"; };
+		9A9BA2862A947112004A7A59 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		9A9BA28C2A947112004A7A59 /* Color.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Color.kt; sourceTree = "<group>"; };
+		9A9BA28D2A947112004A7A59 /* Theme.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Theme.kt; sourceTree = "<group>"; };
+		9A9BA28E2A947112004A7A59 /* Type.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Type.kt; sourceTree = "<group>"; };
+		9A9BA2902A947112004A7A59 /* MainScreenViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainScreenViewModel.kt; sourceTree = "<group>"; };
+		9A9BA2912A947112004A7A59 /* MainScreen.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainScreen.kt; sourceTree = "<group>"; };
+		9A9BA2922A947112004A7A59 /* MainActivity.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainActivity.kt; sourceTree = "<group>"; };
+		9A9BA2942A947112004A7A59 /* Recorder.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Recorder.kt; sourceTree = "<group>"; };
+		9A9BA2962A947112004A7A59 /* LibWhisper.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LibWhisper.kt; sourceTree = "<group>"; };
+		9A9BA2982A947112004A7A59 /* RiffWaveHelper.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RiffWaveHelper.kt; sourceTree = "<group>"; };
+		9A9BA29B2A947112004A7A59 /* jni.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jni.c; sourceTree = "<group>"; };
+		9A9BA29C2A947112004A7A59 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		9A9BA29D2A947112004A7A59 /* Whisper.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Whisper.mk; sourceTree = "<group>"; };
+		9A9BA29E2A947112004A7A59 /* Application.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Application.mk; sourceTree = "<group>"; };
+		9A9BA29F2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2A22A947112004A7A59 /* gradle-wrapper.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "gradle-wrapper.jar"; sourceTree = "<group>"; };
+		9A9BA2A32A947112004A7A59 /* gradle-wrapper.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gradle-wrapper.properties"; sourceTree = "<group>"; };
+		9A9BA2A42A947112004A7A59 /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew; sourceTree = "<group>"; };
+		9A9BA2A52A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2A62A947112004A7A59 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		9A9BA2A72A947112004A7A59 /* gradle.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradle.properties; sourceTree = "<group>"; };
+		9A9BA2A82A947112004A7A59 /* gradlew.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew.bat; sourceTree = "<group>"; };
+		9A9BA2A92A947112004A7A59 /* settings.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = settings.gradle; sourceTree = "<group>"; };
+		9A9BA2AB2A947112004A7A59 /* gradle.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gradle.xml; sourceTree = "<group>"; };
+		9A9BA2AC2A947112004A7A59 /* vcs.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vcs.xml; sourceTree = "<group>"; };
+		9A9BA2AD2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2AE2A947112004A7A59 /* .name */ = {isa = PBXFileReference; lastKnownFileType = text; path = .name; sourceTree = "<group>"; };
+		9A9BA2AF2A947112004A7A59 /* misc.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
+		9A9BA2B02A947112004A7A59 /* compiler.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = compiler.xml; sourceTree = "<group>"; };
+		9A9BA2B22A947112004A7A59 /* speak */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = speak; sourceTree = "<group>"; };
+		9A9BA2B32A947112004A7A59 /* gpt-2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gpt-2.cpp"; sourceTree = "<group>"; };
+		9A9BA2B42A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2B52A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2B62A947112004A7A59 /* speak.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = speak.bat; sourceTree = "<group>"; };
+		9A9BA2B72A947112004A7A59 /* speak.ps1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = speak.ps1; sourceTree = "<group>"; };
+		9A9BA2B82A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2B92A947112004A7A59 /* eleven-labs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "eleven-labs.py"; sourceTree = "<group>"; };
+		9A9BA2BA2A947112004A7A59 /* gpt-2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gpt-2.h"; sourceTree = "<group>"; };
+		9A9BA2BB2A947112004A7A59 /* talk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = talk.cpp; sourceTree = "<group>"; };
+		9A9BA2BE2A947112004A7A59 /* examples.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = examples.yml; sourceTree = "<group>"; };
+		9A9BA2BF2A947112004A7A59 /* bindings-go.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "bindings-go.yml"; sourceTree = "<group>"; };
+		9A9BA2C02A947112004A7A59 /* bindings-ruby.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "bindings-ruby.yml"; sourceTree = "<group>"; };
+		9A9BA2C12A947112004A7A59 /* build.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
+		9A9BA2C22A947112004A7A59 /* ggml-cuda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cuda.h"; sourceTree = "<group>"; };
+		9A9BA2C52A947112004A7A59 /* go.mod */ = {isa = PBXFileReference; lastKnownFileType = text; path = go.mod; sourceTree = "<group>"; };
+		9A9BA2C62A947112004A7A59 /* params.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = params.go; sourceTree = "<group>"; };
+		9A9BA2C72A947112004A7A59 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9A9BA2C82A947112004A7A59 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9A9BA2C92A947112004A7A59 /* go.sum */ = {isa = PBXFileReference; lastKnownFileType = text; path = go.sum; sourceTree = "<group>"; };
+		9A9BA2CA2A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2CC2A947112004A7A59 /* jfk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jfk.wav; sourceTree = "<group>"; };
+		9A9BA2CD2A947112004A7A59 /* doc.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = doc.go; sourceTree = "<group>"; };
+		9A9BA2CE2A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA2D12A947112004A7A59 /* context.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = context.go; sourceTree = "<group>"; };
+		9A9BA2D22A947112004A7A59 /* main.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.go; sourceTree = "<group>"; };
+		9A9BA2D42A947112004A7A59 /* color.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = color.go; sourceTree = "<group>"; };
+		9A9BA2D52A947112004A7A59 /* flags.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = flags.go; sourceTree = "<group>"; };
+		9A9BA2D62A947112004A7A59 /* process.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = process.go; sourceTree = "<group>"; };
+		9A9BA2D72A947112004A7A59 /* main.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.go; sourceTree = "<group>"; };
+		9A9BA2D82A947112004A7A59 /* whisper.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = whisper.go; sourceTree = "<group>"; };
+		9A9BA2D92A947112004A7A59 /* whisper_test.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = whisper_test.go; sourceTree = "<group>"; };
+		9A9BA2DC2A947112004A7A59 /* consts.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = consts.go; sourceTree = "<group>"; };
+		9A9BA2DD2A947112004A7A59 /* interface.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = interface.go; sourceTree = "<group>"; };
+		9A9BA2DE2A947112004A7A59 /* context_test.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = context_test.go; sourceTree = "<group>"; };
+		9A9BA2DF2A947112004A7A59 /* doc.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = doc.go; sourceTree = "<group>"; };
+		9A9BA2E02A947112004A7A59 /* context.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = context.go; sourceTree = "<group>"; };
+		9A9BA2E12A947112004A7A59 /* model.go */ = {isa = PBXFileReference; lastKnownFileType = text; path = model.go; sourceTree = "<group>"; };
+		9A9BA2E22A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA2E42A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA2E72A947113004A7A59 /* gradle-wrapper.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "gradle-wrapper.jar"; sourceTree = "<group>"; };
+		9A9BA2E82A947113004A7A59 /* gradle-wrapper.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gradle-wrapper.properties"; sourceTree = "<group>"; };
+		9A9BA2E92A947113004A7A59 /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = gradlew; sourceTree = "<group>"; };
+		9A9BA2EA2A947113004A7A59 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		9A9BA2EB2A947113004A7A59 /* gradle.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradle.properties; sourceTree = "<group>"; };
+		9A9BA2EC2A947113004A7A59 /* gradlew.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew.bat; sourceTree = "<group>"; };
+		9A9BA2ED2A947113004A7A59 /* settings.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = settings.gradle; sourceTree = "<group>"; };
+		9A9BA2EF2A947113004A7A59 /* uiDesigner.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = uiDesigner.xml; sourceTree = "<group>"; };
+		9A9BA2F72A947113004A7A59 /* WhisperCppTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperCppTest.java; sourceTree = "<group>"; };
+		9A9BA2F82A947113004A7A59 /* WhisperJnaLibraryTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperJnaLibraryTest.java; sourceTree = "<group>"; };
+		9A9BA2FF2A947113004A7A59 /* WhisperCppJnaLibrary.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperCppJnaLibrary.java; sourceTree = "<group>"; };
+		9A9BA3012A947113004A7A59 /* WhisperEncoderBeginCallback.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperEncoderBeginCallback.java; sourceTree = "<group>"; };
+		9A9BA3022A947113004A7A59 /* WhisperNewSegmentCallback.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperNewSegmentCallback.java; sourceTree = "<group>"; };
+		9A9BA3032A947113004A7A59 /* WhisperProgressCallback.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperProgressCallback.java; sourceTree = "<group>"; };
+		9A9BA3042A947113004A7A59 /* WhisperLogitsFilterCallback.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperLogitsFilterCallback.java; sourceTree = "<group>"; };
+		9A9BA3052A947113004A7A59 /* WhisperCpp.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperCpp.java; sourceTree = "<group>"; };
+		9A9BA3072A947113004A7A59 /* WhisperFullParams.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperFullParams.java; sourceTree = "<group>"; };
+		9A9BA3082A947113004A7A59 /* WhisperSamplingStrategy.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperSamplingStrategy.java; sourceTree = "<group>"; };
+		9A9BA3092A947113004A7A59 /* BeamSearchParams.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = BeamSearchParams.java; sourceTree = "<group>"; };
+		9A9BA30A2A947113004A7A59 /* GreedyParams.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GreedyParams.java; sourceTree = "<group>"; };
+		9A9BA30B2A947113004A7A59 /* WhisperHParams.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperHParams.java; sourceTree = "<group>"; };
+		9A9BA30C2A947113004A7A59 /* WhisperFilters.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperFilters.java; sourceTree = "<group>"; };
+		9A9BA30D2A947113004A7A59 /* CBool.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CBool.java; sourceTree = "<group>"; };
+		9A9BA30F2A947113004A7A59 /* WhisperModelLoader.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperModelLoader.java; sourceTree = "<group>"; };
+		9A9BA3102A947113004A7A59 /* WhisperTokenData.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperTokenData.java; sourceTree = "<group>"; };
+		9A9BA3112A947113004A7A59 /* EModel.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = EModel.java; sourceTree = "<group>"; };
+		9A9BA3122A947113004A7A59 /* WhisperModel.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperModel.java; sourceTree = "<group>"; };
+		9A9BA3132A947113004A7A59 /* WhisperState.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperState.java; sourceTree = "<group>"; };
+		9A9BA3152A947113004A7A59 /* GgmlType.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GgmlType.java; sourceTree = "<group>"; };
+		9A9BA3162A947113004A7A59 /* GgmlTensor.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GgmlTensor.java; sourceTree = "<group>"; };
+		9A9BA3172A947113004A7A59 /* WhisperContext.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = WhisperContext.java; sourceTree = "<group>"; };
+		9A9BA31A2A947113004A7A59 /* emscripten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = emscripten.cpp; sourceTree = "<group>"; };
+		9A9BA31B2A947113004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA31C2A947113004A7A59 /* libwhisper.worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = libwhisper.worker.js; sourceTree = "<group>"; };
+		9A9BA31D2A947113004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA31E2A947113004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA31F2A947113004A7A59 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		9A9BA3202A947113004A7A59 /* package-tmpl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "package-tmpl.json"; sourceTree = "<group>"; };
+		9A9BA3212A947113004A7A59 /* whisper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = whisper.js; sourceTree = "<group>"; };
+		9A9BA3242A947113004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA3252A947113004A7A59 /* ruby_whisper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ruby_whisper.h; sourceTree = "<group>"; };
+		9A9BA3262A947113004A7A59 /* extconf.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = extconf.rb; sourceTree = "<group>"; };
+		9A9BA3272A947113004A7A59 /* ruby_whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ruby_whisper.cpp; sourceTree = "<group>"; };
+		9A9BA3292A947113004A7A59 /* test_whisper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = test_whisper.rb; sourceTree = "<group>"; };
+		9A9BA32A2A947113004A7A59 /* ggml-metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-metal.h"; sourceTree = "<group>"; };
+		9A9BA32B2A947113004A7A59 /* ggml-cuda.cu */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ggml-cuda.cu"; sourceTree = "<group>"; };
+		9A9BA32C2A947113004A7A59 /* ggml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggml.h; sourceTree = "<group>"; };
+		9A9BA39C2A968D6D004A7A59 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		9A9BA39D2A968D6D004A7A59 /* INSTALL */ = {isa = PBXFileReference; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		9A9BA39E2A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA39F2A968D6D004A7A59 /* libsamplerate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = libsamplerate.xcodeproj; sourceTree = "<group>"; };
+		9A9BA3A32A968D6D004A7A59 /* ClipMode.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = ClipMode.cmake; sourceTree = "<group>"; };
+		9A9BA3A42A968D6D004A7A59 /* SampleRateConfig.cmake.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleRateConfig.cmake.in; sourceTree = "<group>"; };
+		9A9BA3A52A968D6D004A7A59 /* FindOpus.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindOpus.cmake; sourceTree = "<group>"; };
+		9A9BA3A62A968D6D004A7A59 /* FindSndFile.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindSndFile.cmake; sourceTree = "<group>"; };
+		9A9BA3A72A968D6D004A7A59 /* FindOgg.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindOgg.cmake; sourceTree = "<group>"; };
+		9A9BA3A82A968D6D004A7A59 /* FindVorbis.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindVorbis.cmake; sourceTree = "<group>"; };
+		9A9BA3A92A968D6D004A7A59 /* FindFLAC.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindFLAC.cmake; sourceTree = "<group>"; };
+		9A9BA3AA2A968D6D004A7A59 /* FindFFTW3.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindFFTW3.cmake; sourceTree = "<group>"; };
+		9A9BA3AB2A968D6D004A7A59 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		9A9BA3AC2A968D6D004A7A59 /* libsamplerate.spec.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = libsamplerate.spec.in; sourceTree = "<group>"; };
+		9A9BA3AD2A968D6D004A7A59 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		9A9BA3AF2A968D6D004A7A59 /* samplerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = samplerate.h; sourceTree = "<group>"; };
+		9A9BA3B12A968D6D004A7A59 /* misc_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = misc_test.c; sourceTree = "<group>"; };
+		9A9BA3B22A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA3B32A968D6D004A7A59 /* throughput_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = throughput_test.c; sourceTree = "<group>"; };
+		9A9BA3B42A968D6D004A7A59 /* util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		9A9BA3B52A968D6D004A7A59 /* varispeed_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = varispeed_test.c; sourceTree = "<group>"; };
+		9A9BA3B62A968D6D004A7A59 /* callback_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = callback_test.c; sourceTree = "<group>"; };
+		9A9BA3B72A968D6D004A7A59 /* downsample_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = downsample_test.c; sourceTree = "<group>"; };
+		9A9BA3B82A968D6D004A7A59 /* multichan_throughput_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = multichan_throughput_test.c; sourceTree = "<group>"; };
+		9A9BA3B92A968D6D004A7A59 /* clone_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clone_test.c; sourceTree = "<group>"; };
+		9A9BA3BA2A968D6D004A7A59 /* snr_bw_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = snr_bw_test.c; sourceTree = "<group>"; };
+		9A9BA3BB2A968D6D004A7A59 /* reset_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reset_test.c; sourceTree = "<group>"; };
+		9A9BA3BC2A968D6D004A7A59 /* src-evaluate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "src-evaluate.c"; sourceTree = "<group>"; };
+		9A9BA3BD2A968D6D004A7A59 /* streaming_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = streaming_test.c; sourceTree = "<group>"; };
+		9A9BA3BE2A968D6D004A7A59 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9A9BA3BF2A968D6D004A7A59 /* float_short_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = float_short_test.c; sourceTree = "<group>"; };
+		9A9BA3C02A968D6D004A7A59 /* calc_snr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc_snr.c; sourceTree = "<group>"; };
+		9A9BA3C12A968D6D004A7A59 /* callback_hang_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = callback_hang_test.c; sourceTree = "<group>"; };
+		9A9BA3C22A968D6D004A7A59 /* simple_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = simple_test.c; sourceTree = "<group>"; };
+		9A9BA3C32A968D6D004A7A59 /* multi_channel_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = multi_channel_test.c; sourceTree = "<group>"; };
+		9A9BA3C42A968D6D004A7A59 /* nullptr_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nullptr_test.c; sourceTree = "<group>"; };
+		9A9BA3C52A968D6D004A7A59 /* termination_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = termination_test.c; sourceTree = "<group>"; };
+		9A9BA3C72A968D6D004A7A59 /* SRC.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = SRC.css; sourceTree = "<group>"; };
+		9A9BA3C82A968D6D004A7A59 /* license.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = license.md; sourceTree = "<group>"; };
+		9A9BA3C92A968D6D004A7A59 /* api_misc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = api_misc.md; sourceTree = "<group>"; };
+		9A9BA3CA2A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA3CB2A968D6D004A7A59 /* api.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = api.md; sourceTree = "<group>"; };
+		9A9BA3CC2A968D6D004A7A59 /* bugs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = bugs.md; sourceTree = "<group>"; };
+		9A9BA3CD2A968D6D004A7A59 /* SRC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SRC.png; sourceTree = "<group>"; };
+		9A9BA3CE2A968D6D004A7A59 /* api_callback.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = api_callback.md; sourceTree = "<group>"; };
+		9A9BA3CF2A968D6D004A7A59 /* foo_dsp_src9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foo_dsp_src9.png; sourceTree = "<group>"; };
+		9A9BA3D02A968D6D004A7A59 /* history.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = history.md; sourceTree = "<group>"; };
+		9A9BA3D12A968D6D004A7A59 /* faq.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = faq.md; sourceTree = "<group>"; };
+		9A9BA3D22A968D6D004A7A59 /* quality.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = quality.md; sourceTree = "<group>"; };
+		9A9BA3D42A968D6D004A7A59 /* default.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
+		9A9BA3D52A968D6D004A7A59 /* api_full.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = api_full.md; sourceTree = "<group>"; };
+		9A9BA3D62A968D6D004A7A59 /* lists.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = lists.md; sourceTree = "<group>"; };
+		9A9BA3D72A968D6D004A7A59 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
+		9A9BA3D82A968D6D004A7A59 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
+		9A9BA3D92A968D6D004A7A59 /* win32.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = win32.md; sourceTree = "<group>"; };
+		9A9BA3DA2A968D6D004A7A59 /* paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal.png; sourceTree = "<group>"; };
+		9A9BA3DB2A968D6D004A7A59 /* download.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = download.md; sourceTree = "<group>"; };
+		9A9BA3DC2A968D6D004A7A59 /* api_simple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = api_simple.md; sourceTree = "<group>"; };
+		9A9BA3DD2A968D6D004A7A59 /* config.h.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.cmake; sourceTree = "<group>"; };
+		9A9BA3DE2A968D6D004A7A59 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		9A9BA3DF2A968D6D004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA3E02A968D6D004A7A59 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		9A9BA3E22A968D6D004A7A59 /* generate_filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = generate_filter.m; sourceTree = "<group>"; };
+		9A9BA3E32A968D6D004A7A59 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		9A9BA3E42A968D6D004A7A59 /* make_filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = make_filter.m; sourceTree = "<group>"; };
+		9A9BA3E52A968D6D004A7A59 /* measure_filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = measure_filter.m; sourceTree = "<group>"; };
+		9A9BA3E62A968D6D004A7A59 /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		9A9BA3E72A968D6D004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA3E92A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA3EA2A968D6D004A7A59 /* audio_out.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audio_out.h; sourceTree = "<group>"; };
+		9A9BA3EB2A968D6D004A7A59 /* varispeed-play.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "varispeed-play.c"; sourceTree = "<group>"; };
+		9A9BA3EC2A968D6D004A7A59 /* audio_out.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = audio_out.c; sourceTree = "<group>"; };
+		9A9BA3ED2A968D6D004A7A59 /* timewarp-file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "timewarp-file.c"; sourceTree = "<group>"; };
+		9A9BA3EE2A968D6D004A7A59 /* samplerate.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = samplerate.pc.in; sourceTree = "<group>"; };
+		9A9BA3F12A968D6D004A7A59 /* build.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
+		9A9BA3F22A968D6D004A7A59 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		9A9BA3F42A968D6D004A7A59 /* clip_mode.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = clip_mode.m4; sourceTree = "<group>"; };
+		9A9BA3F52A968D6D004A7A59 /* ax_append_compile_flags.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_append_compile_flags.m4; sourceTree = "<group>"; };
+		9A9BA3F62A968D6D004A7A59 /* ax_compiler_vendor.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_compiler_vendor.m4; sourceTree = "<group>"; };
+		9A9BA3F72A968D6D004A7A59 /* ax_check_link_flag.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_check_link_flag.m4; sourceTree = "<group>"; };
+		9A9BA3F82A968D6D004A7A59 /* ax_check_compile_flag.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_check_compile_flag.m4; sourceTree = "<group>"; };
+		9A9BA3F92A968D6D004A7A59 /* ax_append_link_flags.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_append_link_flags.m4; sourceTree = "<group>"; };
+		9A9BA3FA2A968D6D004A7A59 /* ax_recursive_eval.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_recursive_eval.m4; sourceTree = "<group>"; };
+		9A9BA3FB2A968D6D004A7A59 /* ax_compiler_version.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_compiler_version.m4; sourceTree = "<group>"; };
+		9A9BA3FC2A968D6D004A7A59 /* ax_require_defined.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_require_defined.m4; sourceTree = "<group>"; };
+		9A9BA3FD2A968D6D004A7A59 /* ax_append_flag.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ax_append_flag.m4; sourceTree = "<group>"; };
+		9A9BA3FE2A968D6D004A7A59 /* check_signal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = check_signal.m4; sourceTree = "<group>"; };
+		9A9BA4002A968D6D004A7A59 /* libsamplerate-0.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libsamplerate-0.def"; sourceTree = "<group>"; };
+		9A9BA4012A968D6D004A7A59 /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		9A9BA4032A968D6D004A7A59 /* samplerate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = samplerate.c; sourceTree = "<group>"; };
+		9A9BA4042A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA4052A968D6D004A7A59 /* src_sinc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src_sinc.c; sourceTree = "<group>"; };
+		9A9BA4062A968D6D004A7A59 /* src_zoh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src_zoh.c; sourceTree = "<group>"; };
+		9A9BA4072A968D6D004A7A59 /* src_linear.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = src_linear.c; sourceTree = "<group>"; };
+		9A9BA4082A968D6D004A7A59 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		9A9BA4092A968D6D004A7A59 /* fastest_coeffs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fastest_coeffs.h; sourceTree = "<group>"; };
+		9A9BA40A2A968D6D004A7A59 /* Version_script.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Version_script.in; sourceTree = "<group>"; };
+		9A9BA40B2A968D6D004A7A59 /* mid_qual_coeffs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mid_qual_coeffs.h; sourceTree = "<group>"; };
+		9A9BA40C2A968D6D004A7A59 /* high_qual_coeffs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = high_qual_coeffs.h; sourceTree = "<group>"; };
+		9A9BA40D2A968D6D004A7A59 /* check_asm.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = check_asm.sh; sourceTree = "<group>"; };
+		A6E708F8B8206E5E9195AE85 /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.profile.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
+		C2BB4C6C966E0340480416DB /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F416C757FA85AB2371DEB83F /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		FC3FF9BCA903C4AC0B93ACD6 /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE2B0F038C61A6FA714385D /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2AF364C5258B87BC9938C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726919B0BC04F471984E233C /* Pods_RunnerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		331C8082294A63A400263BE5 /* RunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				331C807B294A618700263BE5 /* RunnerTests.swift */,
+			);
+			path = RunnerTests;
+			sourceTree = "<group>";
+		};
+		83C9404399AADF136C020EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB4C6C966E0340480416DB /* Pods_Runner.framework */,
+				6C71367F3D132A53233DC85B /* Pods_RunnerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				9740EEB31CF90195004384FC /* Generated.xcconfig */,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		97C146E51CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9A9BA39B2A968D6D004A7A59 /* libsamplerate */,
+				9A9BA1962A947112004A7A59 /* whisper.cpp */,
+				9740EEB11CF90186004384FC /* Flutter */,
+				97C146F01CF9000F007C117D /* Runner */,
+				97C146EF1CF9000F007C117D /* Products */,
+				331C8082294A63A400263BE5 /* RunnerTests */,
+				A7171F528C7DEEC3FA3CAA71 /* Pods */,
+				83C9404399AADF136C020EDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97C146EF1CF9000F007C117D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C146EE1CF9000F007C117D /* Runner.app */,
+				331C8081294A63A400263BE5 /* RunnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				97C147021CF9000F007C117D /* Info.plist */,
+				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		9A9BA1962A947112004A7A59 /* whisper.cpp */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1972A947112004A7A59 /* whisper.h */,
+				9A9BA1982A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1992A947112004A7A59 /* ggml-opencl.h */,
+				9A9BA19A2A947112004A7A59 /* LICENSE */,
+				9A9BA19B2A947112004A7A59 /* cmake */,
+				9A9BA19F2A947112004A7A59 /* Makefile */,
+				9A9BA1A02A947112004A7A59 /* tests */,
+				9A9BA1A92A947112004A7A59 /* openvino */,
+				9A9BA1AC2A947112004A7A59 /* whisper.cpp.xcodeproj */,
+				9A9BA1AF2A947112004A7A59 /* ggml-metal.metal */,
+				9A9BA1B02A947112004A7A59 /* ggml.c */,
+				9A9BA1B12A947112004A7A59 /* ggml-opencl.cpp */,
+				9A9BA1B22A947112004A7A59 /* models */,
+				9A9BA1C92A947112004A7A59 /* ggml-metal.m */,
+				9A9BA1CA2A947112004A7A59 /* whisper.cpp */,
+				9A9BA1CB2A947112004A7A59 /* .gitmodules */,
+				9A9BA1CC2A947112004A7A59 /* README.md */,
+				9A9BA1CD2A947112004A7A59 /* coreml */,
+				9A9BA1D42A947112004A7A59 /* samples */,
+				9A9BA1D82A947112004A7A59 /* .gitignore */,
+				9A9BA1D92A947112004A7A59 /* extra */,
+				9A9BA1E12A947112004A7A59 /* examples */,
+				9A9BA2BC2A947112004A7A59 /* .github */,
+				9A9BA2C22A947112004A7A59 /* ggml-cuda.h */,
+				9A9BA2C32A947112004A7A59 /* bindings */,
+				9A9BA32A2A947113004A7A59 /* ggml-metal.h */,
+				9A9BA32B2A947113004A7A59 /* ggml-cuda.cu */,
+				9A9BA32C2A947113004A7A59 /* ggml.h */,
+			);
+			name = whisper.cpp;
+			path = Classes/whisper.cpp;
+			sourceTree = "<group>";
+		};
+		9A9BA19B2A947112004A7A59 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA19C2A947112004A7A59 /* BuildTypes.cmake */,
+				9A9BA19D2A947112004A7A59 /* DefaultTargetOptions.cmake */,
+				9A9BA19E2A947112004A7A59 /* GitVars.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		9A9BA1A02A947112004A7A59 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1A12A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1A22A947112004A7A59 /* run-tests.sh */,
+				9A9BA1A32A947112004A7A59 /* es-0-ref.txt */,
+				9A9BA1A42A947112004A7A59 /* en-1-ref.txt */,
+				9A9BA1A52A947112004A7A59 /* .gitignore */,
+				9A9BA1A62A947112004A7A59 /* en-0-ref.txt */,
+				9A9BA1A72A947112004A7A59 /* en-2-ref.txt */,
+				9A9BA1A82A947112004A7A59 /* test-whisper.js */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		9A9BA1A92A947112004A7A59 /* openvino */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1AA2A947112004A7A59 /* whisper-openvino-encoder.h */,
+				9A9BA1AB2A947112004A7A59 /* whisper-openvino-encoder.cpp */,
+			);
+			path = openvino;
+			sourceTree = "<group>";
+		};
+		9A9BA1AD2A947112004A7A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9BA1B22A947112004A7A59 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1B32A947112004A7A59 /* for-tests-ggml-tiny.en.bin */,
+				9A9BA1B42A947112004A7A59 /* for-tests-ggml-medium.bin */,
+				9A9BA1B52A947112004A7A59 /* for-tests-ggml-tiny.bin */,
+				9A9BA1B62A947112004A7A59 /* convert-h5-to-ggml.py */,
+				9A9BA1B72A947112004A7A59 /* for-tests-ggml-base.en.bin */,
+				9A9BA1B82A947112004A7A59 /* download-ggml-model.cmd */,
+				9A9BA1B92A947112004A7A59 /* for-tests-ggml-large.bin */,
+				9A9BA1BA2A947112004A7A59 /* generate-coreml-model.sh */,
+				9A9BA1BB2A947112004A7A59 /* for-tests-ggml-small.bin */,
+				9A9BA1BC2A947112004A7A59 /* convert-pt-to-ggml.py */,
+				9A9BA1BD2A947112004A7A59 /* README.md */,
+				9A9BA1BE2A947112004A7A59 /* for-tests-ggml-base.bin */,
+				9A9BA1BF2A947112004A7A59 /* generate-coreml-interface.sh */,
+				9A9BA1C02A947112004A7A59 /* download-ggml-model.sh */,
+				9A9BA1C12A947112004A7A59 /* .gitignore */,
+				9A9BA1C22A947112004A7A59 /* for-tests-ggml-small.en.bin */,
+				9A9BA1C32A947112004A7A59 /* download-coreml-model.sh */,
+				9A9BA1C42A947112004A7A59 /* ggml_to_pt.py */,
+				9A9BA1C52A947112004A7A59 /* convert-whisper-to-openvino.py */,
+				9A9BA1C62A947112004A7A59 /* for-tests-ggml-medium.en.bin */,
+				9A9BA1C72A947112004A7A59 /* openvino-conversion-requirements.txt */,
+				9A9BA1C82A947112004A7A59 /* convert-whisper-to-coreml.py */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9A9BA1CD2A947112004A7A59 /* coreml */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1CE2A947112004A7A59 /* whisper-encoder-impl.m */,
+				9A9BA1CF2A947112004A7A59 /* whisper-encoder.h */,
+				9A9BA1D02A947112004A7A59 /* whisper-encoder.mm */,
+				9A9BA1D12A947112004A7A59 /* whisper-decoder-impl.h */,
+				9A9BA1D22A947112004A7A59 /* whisper-encoder-impl.h */,
+				9A9BA1D32A947112004A7A59 /* whisper-decoder-impl.m */,
+			);
+			path = coreml;
+			sourceTree = "<group>";
+		};
+		9A9BA1D42A947112004A7A59 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1D52A947112004A7A59 /* README.md */,
+				9A9BA1D62A947112004A7A59 /* .gitignore */,
+				9A9BA1D72A947112004A7A59 /* jfk.wav */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		9A9BA1D92A947112004A7A59 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1DA2A947112004A7A59 /* convert-all.sh */,
+				9A9BA1DB2A947112004A7A59 /* bench-wts.sh */,
+				9A9BA1DC2A947112004A7A59 /* sync-ggml.sh */,
+				9A9BA1DD2A947112004A7A59 /* sha-all.sh */,
+				9A9BA1DE2A947112004A7A59 /* bench-all.sh */,
+				9A9BA1DF2A947112004A7A59 /* quantize-all.sh */,
+				9A9BA1E02A947112004A7A59 /* deploy-wasm.sh */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		9A9BA1E12A947112004A7A59 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1E22A947112004A7A59 /* quantize */,
+				9A9BA1E62A947112004A7A59 /* common.cpp */,
+				9A9BA1E72A947112004A7A59 /* bench */,
+				9A9BA1EB2A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1EC2A947112004A7A59 /* command.wasm */,
+				9A9BA1F12A947112004A7A59 /* stream */,
+				9A9BA1F52A947112004A7A59 /* addon.node */,
+				9A9BA1FE2A947112004A7A59 /* livestream.sh */,
+				9A9BA1FF2A947112004A7A59 /* whisper.nvim */,
+				9A9BA2032A947112004A7A59 /* whisper.wasm */,
+				9A9BA2082A947112004A7A59 /* twitch.sh */,
+				9A9BA2092A947112004A7A59 /* dr_wav.h */,
+				9A9BA20A2A947112004A7A59 /* common.h */,
+				9A9BA20B2A947112004A7A59 /* bench.wasm */,
+				9A9BA2102A947112004A7A59 /* whisper.swiftui */,
+				9A9BA22B2A947112004A7A59 /* talk-llama */,
+				9A9BA2392A947112004A7A59 /* helpers.js */,
+				9A9BA23A2A947112004A7A59 /* talk.wasm */,
+				9A9BA2412A947112004A7A59 /* stream.wasm */,
+				9A9BA2462A947112004A7A59 /* generate-karaoke.sh */,
+				9A9BA2472A947112004A7A59 /* command */,
+				9A9BA24C2A947112004A7A59 /* common-ggml.cpp */,
+				9A9BA24D2A947112004A7A59 /* common-ggml.h */,
+				9A9BA24E2A947112004A7A59 /* yt-wsp.sh */,
+				9A9BA24F2A947112004A7A59 /* common-sdl.h */,
+				9A9BA2502A947112004A7A59 /* common-sdl.cpp */,
+				9A9BA2512A947112004A7A59 /* main */,
+				9A9BA2552A947112004A7A59 /* whisper.objc */,
+				9A9BA2682A947112004A7A59 /* whisper.android */,
+				9A9BA2B12A947112004A7A59 /* talk */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		9A9BA1E22A947112004A7A59 /* quantize */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1E32A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1E42A947112004A7A59 /* README.md */,
+				9A9BA1E52A947112004A7A59 /* quantize.cpp */,
+			);
+			path = quantize;
+			sourceTree = "<group>";
+		};
+		9A9BA1E72A947112004A7A59 /* bench */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1E82A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1E92A947112004A7A59 /* README.md */,
+				9A9BA1EA2A947112004A7A59 /* bench.cpp */,
+			);
+			path = bench;
+			sourceTree = "<group>";
+		};
+		9A9BA1EC2A947112004A7A59 /* command.wasm */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1ED2A947112004A7A59 /* emscripten.cpp */,
+				9A9BA1EE2A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1EF2A947112004A7A59 /* README.md */,
+				9A9BA1F02A947112004A7A59 /* index-tmpl.html */,
+			);
+			path = command.wasm;
+			sourceTree = "<group>";
+		};
+		9A9BA1F12A947112004A7A59 /* stream */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1F22A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1F32A947112004A7A59 /* README.md */,
+				9A9BA1F42A947112004A7A59 /* stream.cpp */,
+			);
+			path = stream;
+			sourceTree = "<group>";
+		};
+		9A9BA1F52A947112004A7A59 /* addon.node */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1F62A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1F72A947112004A7A59 /* __test__ */,
+				9A9BA1F92A947112004A7A59 /* index.js */,
+				9A9BA1FA2A947112004A7A59 /* README.md */,
+				9A9BA1FB2A947112004A7A59 /* .gitignore */,
+				9A9BA1FC2A947112004A7A59 /* package.json */,
+				9A9BA1FD2A947112004A7A59 /* addon.cpp */,
+			);
+			path = addon.node;
+			sourceTree = "<group>";
+		};
+		9A9BA1F72A947112004A7A59 /* __test__ */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1F82A947112004A7A59 /* whisper.spec.js */,
+			);
+			path = __test__;
+			sourceTree = "<group>";
+		};
+		9A9BA1FF2A947112004A7A59 /* whisper.nvim */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2002A947112004A7A59 /* whisper.nvim */,
+				9A9BA2012A947112004A7A59 /* README.md */,
+				9A9BA2022A947112004A7A59 /* whisper.vim */,
+			);
+			path = whisper.nvim;
+			sourceTree = "<group>";
+		};
+		9A9BA2032A947112004A7A59 /* whisper.wasm */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2042A947112004A7A59 /* emscripten.cpp */,
+				9A9BA2052A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2062A947112004A7A59 /* README.md */,
+				9A9BA2072A947112004A7A59 /* index-tmpl.html */,
+			);
+			path = whisper.wasm;
+			sourceTree = "<group>";
+		};
+		9A9BA20B2A947112004A7A59 /* bench.wasm */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA20C2A947112004A7A59 /* emscripten.cpp */,
+				9A9BA20D2A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA20E2A947112004A7A59 /* README.md */,
+				9A9BA20F2A947112004A7A59 /* index-tmpl.html */,
+			);
+			path = bench.wasm;
+			sourceTree = "<group>";
+		};
+		9A9BA2102A947112004A7A59 /* whisper.swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2112A947112004A7A59 /* whisper.swiftui.xcodeproj */,
+				9A9BA2142A947112004A7A59 /* README.md */,
+				9A9BA2152A947112004A7A59 /* whisper.cpp.swift */,
+				9A9BA2182A947112004A7A59 /* whisper.swiftui.demo */,
+			);
+			path = whisper.swiftui;
+			sourceTree = "<group>";
+		};
+		9A9BA2122A947112004A7A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3332A947113004A7A59 /* whisper.swiftui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9BA2152A947112004A7A59 /* whisper.cpp.swift */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2162A947112004A7A59 /* LibWhisper.swift */,
+				9A9BA2172A947112004A7A59 /* WhisperCppDemo-Bridging-Header.h */,
+			);
+			path = whisper.cpp.swift;
+			sourceTree = "<group>";
+		};
+		9A9BA2182A947112004A7A59 /* whisper.swiftui.demo */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2192A947112004A7A59 /* UI */,
+				9A9BA21B2A947112004A7A59 /* Resources */,
+				9A9BA2202A947112004A7A59 /* WhisperCppDemoApp.swift */,
+				9A9BA2212A947112004A7A59 /* Utils */,
+				9A9BA2242A947112004A7A59 /* Models */,
+				9A9BA2262A947112004A7A59 /* Supporting files */,
+			);
+			path = whisper.swiftui.demo;
+			sourceTree = "<group>";
+		};
+		9A9BA2192A947112004A7A59 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA21A2A947112004A7A59 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9A9BA21B2A947112004A7A59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA21C2A947112004A7A59 /* models */,
+				9A9BA21E2A947112004A7A59 /* samples */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A9BA21C2A947112004A7A59 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA21D2A947112004A7A59 /* .gitignore */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9A9BA21E2A947112004A7A59 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA21F2A947112004A7A59 /* .gitignore */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		9A9BA2212A947112004A7A59 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2222A947112004A7A59 /* Recorder.swift */,
+				9A9BA2232A947112004A7A59 /* RiffWaveUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A9BA2242A947112004A7A59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2252A947112004A7A59 /* WhisperState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A9BA2262A947112004A7A59 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2272A947112004A7A59 /* Assets.xcassets */,
+				9A9BA2282A947112004A7A59 /* Preview Content */,
+				9A9BA22A2A947112004A7A59 /* WhisperCppDemo.entitlements */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		9A9BA2282A947112004A7A59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2292A947112004A7A59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A9BA22B2A947112004A7A59 /* talk-llama */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA22C2A947112004A7A59 /* llama-util.h */,
+				9A9BA22D2A947112004A7A59 /* speak */,
+				9A9BA22E2A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA22F2A947112004A7A59 /* llama.cpp */,
+				9A9BA2302A947112004A7A59 /* README.md */,
+				9A9BA2312A947112004A7A59 /* speak.bat */,
+				9A9BA2322A947112004A7A59 /* speak.ps1 */,
+				9A9BA2332A947112004A7A59 /* .gitignore */,
+				9A9BA2342A947112004A7A59 /* eleven-labs.py */,
+				9A9BA2352A947112004A7A59 /* prompts */,
+				9A9BA2372A947112004A7A59 /* talk-llama.cpp */,
+				9A9BA2382A947112004A7A59 /* llama.h */,
+			);
+			path = "talk-llama";
+			sourceTree = "<group>";
+		};
+		9A9BA2352A947112004A7A59 /* prompts */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2362A947112004A7A59 /* talk-alpaca.txt */,
+			);
+			path = prompts;
+			sourceTree = "<group>";
+		};
+		9A9BA23A2A947112004A7A59 /* talk.wasm */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA23B2A947112004A7A59 /* emscripten.cpp */,
+				9A9BA23C2A947112004A7A59 /* gpt-2.cpp */,
+				9A9BA23D2A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA23E2A947112004A7A59 /* README.md */,
+				9A9BA23F2A947112004A7A59 /* index-tmpl.html */,
+				9A9BA2402A947112004A7A59 /* gpt-2.h */,
+			);
+			path = talk.wasm;
+			sourceTree = "<group>";
+		};
+		9A9BA2412A947112004A7A59 /* stream.wasm */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2422A947112004A7A59 /* emscripten.cpp */,
+				9A9BA2432A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2442A947112004A7A59 /* README.md */,
+				9A9BA2452A947112004A7A59 /* index-tmpl.html */,
+			);
+			path = stream.wasm;
+			sourceTree = "<group>";
+		};
+		9A9BA2472A947112004A7A59 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2482A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2492A947112004A7A59 /* command.cpp */,
+				9A9BA24A2A947112004A7A59 /* README.md */,
+				9A9BA24B2A947112004A7A59 /* commands.txt */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		9A9BA2512A947112004A7A59 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2522A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2532A947112004A7A59 /* README.md */,
+				9A9BA2542A947112004A7A59 /* main.cpp */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		9A9BA2552A947112004A7A59 /* whisper.objc */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2562A947112004A7A59 /* README.md */,
+				9A9BA2572A947112004A7A59 /* whisper.objc.xcodeproj */,
+				9A9BA25A2A947112004A7A59 /* whisper.objc */,
+			);
+			path = whisper.objc;
+			sourceTree = "<group>";
+		};
+		9A9BA2582A947112004A7A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3302A947113004A7A59 /* whisper.objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9BA25A2A947112004A7A59 /* whisper.objc */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA25B2A947112004A7A59 /* AppDelegate.h */,
+				9A9BA25C2A947112004A7A59 /* Assets.xcassets */,
+				9A9BA25D2A947112004A7A59 /* ViewController.m */,
+				9A9BA25E2A947112004A7A59 /* SceneDelegate.m */,
+				9A9BA25F2A947112004A7A59 /* LaunchScreen.storyboard */,
+				9A9BA2612A947112004A7A59 /* Main.storyboard */,
+				9A9BA2632A947112004A7A59 /* main.m */,
+				9A9BA2642A947112004A7A59 /* AppDelegate.m */,
+				9A9BA2652A947112004A7A59 /* Info.plist */,
+				9A9BA2662A947112004A7A59 /* ViewController.h */,
+				9A9BA2672A947112004A7A59 /* SceneDelegate.h */,
+			);
+			path = whisper.objc;
+			sourceTree = "<group>";
+		};
+		9A9BA2682A947112004A7A59 /* whisper.android */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2692A947112004A7A59 /* app */,
+				9A9BA29F2A947112004A7A59 /* README.md */,
+				9A9BA2A02A947112004A7A59 /* gradle */,
+				9A9BA2A42A947112004A7A59 /* gradlew */,
+				9A9BA2A52A947112004A7A59 /* .gitignore */,
+				9A9BA2A62A947112004A7A59 /* build.gradle */,
+				9A9BA2A72A947112004A7A59 /* gradle.properties */,
+				9A9BA2A82A947112004A7A59 /* gradlew.bat */,
+				9A9BA2A92A947112004A7A59 /* settings.gradle */,
+				9A9BA2AA2A947112004A7A59 /* .idea */,
+			);
+			path = whisper.android;
+			sourceTree = "<group>";
+		};
+		9A9BA2692A947112004A7A59 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA26A2A947112004A7A59 /* proguard-rules.pro */,
+				9A9BA26B2A947112004A7A59 /* .gitignore */,
+				9A9BA26C2A947112004A7A59 /* build.gradle */,
+				9A9BA26D2A947112004A7A59 /* src */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		9A9BA26D2A947112004A7A59 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA26E2A947112004A7A59 /* androidTest */,
+				9A9BA2732A947112004A7A59 /* test */,
+				9A9BA2782A947112004A7A59 /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9A9BA26E2A947112004A7A59 /* androidTest */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA26F2A947112004A7A59 /* java */,
+			);
+			path = androidTest;
+			sourceTree = "<group>";
+		};
+		9A9BA26F2A947112004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2702A947112004A7A59 /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2702A947112004A7A59 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2712A947112004A7A59 /* whispercppdemo */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		9A9BA2712A947112004A7A59 /* whispercppdemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2722A947112004A7A59 /* ExampleInstrumentedTest.kt */,
+			);
+			path = whispercppdemo;
+			sourceTree = "<group>";
+		};
+		9A9BA2732A947112004A7A59 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2742A947112004A7A59 /* java */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		9A9BA2742A947112004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2752A947112004A7A59 /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2752A947112004A7A59 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2762A947112004A7A59 /* whispercppdemo */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		9A9BA2762A947112004A7A59 /* whispercppdemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2772A947112004A7A59 /* ExampleUnitTest.kt */,
+			);
+			path = whispercppdemo;
+			sourceTree = "<group>";
+		};
+		9A9BA2782A947112004A7A59 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2792A947112004A7A59 /* res */,
+				9A9BA2862A947112004A7A59 /* AndroidManifest.xml */,
+				9A9BA2872A947112004A7A59 /* java */,
+				9A9BA2992A947112004A7A59 /* jni */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		9A9BA2792A947112004A7A59 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA27A2A947112004A7A59 /* drawable */,
+				9A9BA27D2A947112004A7A59 /* values */,
+				9A9BA2812A947112004A7A59 /* xml */,
+				9A9BA2842A947112004A7A59 /* mipmap-anydpi */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		9A9BA27A2A947112004A7A59 /* drawable */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA27B2A947112004A7A59 /* ic_launcher_foreground.xml */,
+				9A9BA27C2A947112004A7A59 /* ic_launcher_background.xml */,
+			);
+			path = drawable;
+			sourceTree = "<group>";
+		};
+		9A9BA27D2A947112004A7A59 /* values */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA27E2A947112004A7A59 /* colors.xml */,
+				9A9BA27F2A947112004A7A59 /* themes.xml */,
+				9A9BA2802A947112004A7A59 /* strings.xml */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		9A9BA2812A947112004A7A59 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2822A947112004A7A59 /* backup_rules.xml */,
+				9A9BA2832A947112004A7A59 /* data_extraction_rules.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		9A9BA2842A947112004A7A59 /* mipmap-anydpi */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2852A947112004A7A59 /* ic_launcher.xml */,
+			);
+			path = "mipmap-anydpi";
+			sourceTree = "<group>";
+		};
+		9A9BA2872A947112004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2882A947112004A7A59 /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2882A947112004A7A59 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2892A947112004A7A59 /* whispercppdemo */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		9A9BA2892A947112004A7A59 /* whispercppdemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA28A2A947112004A7A59 /* ui */,
+				9A9BA2922A947112004A7A59 /* MainActivity.kt */,
+				9A9BA2932A947112004A7A59 /* recorder */,
+				9A9BA2952A947112004A7A59 /* whisper */,
+				9A9BA2972A947112004A7A59 /* media */,
+			);
+			path = whispercppdemo;
+			sourceTree = "<group>";
+		};
+		9A9BA28A2A947112004A7A59 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA28B2A947112004A7A59 /* theme */,
+				9A9BA28F2A947112004A7A59 /* main */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		9A9BA28B2A947112004A7A59 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA28C2A947112004A7A59 /* Color.kt */,
+				9A9BA28D2A947112004A7A59 /* Theme.kt */,
+				9A9BA28E2A947112004A7A59 /* Type.kt */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		9A9BA28F2A947112004A7A59 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2902A947112004A7A59 /* MainScreenViewModel.kt */,
+				9A9BA2912A947112004A7A59 /* MainScreen.kt */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		9A9BA2932A947112004A7A59 /* recorder */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2942A947112004A7A59 /* Recorder.kt */,
+			);
+			path = recorder;
+			sourceTree = "<group>";
+		};
+		9A9BA2952A947112004A7A59 /* whisper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2962A947112004A7A59 /* LibWhisper.kt */,
+			);
+			path = whisper;
+			sourceTree = "<group>";
+		};
+		9A9BA2972A947112004A7A59 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2982A947112004A7A59 /* RiffWaveHelper.kt */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		9A9BA2992A947112004A7A59 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA29A2A947112004A7A59 /* whisper */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		9A9BA29A2A947112004A7A59 /* whisper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA29B2A947112004A7A59 /* jni.c */,
+				9A9BA29C2A947112004A7A59 /* Android.mk */,
+				9A9BA29D2A947112004A7A59 /* Whisper.mk */,
+				9A9BA29E2A947112004A7A59 /* Application.mk */,
+			);
+			path = whisper;
+			sourceTree = "<group>";
+		};
+		9A9BA2A02A947112004A7A59 /* gradle */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2A12A947112004A7A59 /* wrapper */,
+			);
+			path = gradle;
+			sourceTree = "<group>";
+		};
+		9A9BA2A12A947112004A7A59 /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2A22A947112004A7A59 /* gradle-wrapper.jar */,
+				9A9BA2A32A947112004A7A59 /* gradle-wrapper.properties */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		9A9BA2AA2A947112004A7A59 /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2AB2A947112004A7A59 /* gradle.xml */,
+				9A9BA2AC2A947112004A7A59 /* vcs.xml */,
+				9A9BA2AD2A947112004A7A59 /* .gitignore */,
+				9A9BA2AE2A947112004A7A59 /* .name */,
+				9A9BA2AF2A947112004A7A59 /* misc.xml */,
+				9A9BA2B02A947112004A7A59 /* compiler.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		9A9BA2B12A947112004A7A59 /* talk */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2B22A947112004A7A59 /* speak */,
+				9A9BA2B32A947112004A7A59 /* gpt-2.cpp */,
+				9A9BA2B42A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2B52A947112004A7A59 /* README.md */,
+				9A9BA2B62A947112004A7A59 /* speak.bat */,
+				9A9BA2B72A947112004A7A59 /* speak.ps1 */,
+				9A9BA2B82A947112004A7A59 /* .gitignore */,
+				9A9BA2B92A947112004A7A59 /* eleven-labs.py */,
+				9A9BA2BA2A947112004A7A59 /* gpt-2.h */,
+				9A9BA2BB2A947112004A7A59 /* talk.cpp */,
+			);
+			path = talk;
+			sourceTree = "<group>";
+		};
+		9A9BA2BC2A947112004A7A59 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2BD2A947112004A7A59 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		9A9BA2BD2A947112004A7A59 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2BE2A947112004A7A59 /* examples.yml */,
+				9A9BA2BF2A947112004A7A59 /* bindings-go.yml */,
+				9A9BA2C02A947112004A7A59 /* bindings-ruby.yml */,
+				9A9BA2C12A947112004A7A59 /* build.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		9A9BA2C32A947112004A7A59 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2C42A947112004A7A59 /* go */,
+				9A9BA2E22A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA2E32A947112004A7A59 /* java */,
+				9A9BA3182A947113004A7A59 /* ios */,
+				9A9BA3192A947113004A7A59 /* javascript */,
+				9A9BA3222A947113004A7A59 /* ruby */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		9A9BA2C42A947112004A7A59 /* go */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2C52A947112004A7A59 /* go.mod */,
+				9A9BA2C62A947112004A7A59 /* params.go */,
+				9A9BA2C72A947112004A7A59 /* LICENSE */,
+				9A9BA2C82A947112004A7A59 /* Makefile */,
+				9A9BA2C92A947112004A7A59 /* go.sum */,
+				9A9BA2CA2A947112004A7A59 /* README.md */,
+				9A9BA2CB2A947112004A7A59 /* samples */,
+				9A9BA2CD2A947112004A7A59 /* doc.go */,
+				9A9BA2CE2A947112004A7A59 /* .gitignore */,
+				9A9BA2CF2A947112004A7A59 /* examples */,
+				9A9BA2D82A947112004A7A59 /* whisper.go */,
+				9A9BA2D92A947112004A7A59 /* whisper_test.go */,
+				9A9BA2DA2A947112004A7A59 /* pkg */,
+			);
+			path = go;
+			sourceTree = "<group>";
+		};
+		9A9BA2CB2A947112004A7A59 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2CC2A947112004A7A59 /* jfk.wav */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		9A9BA2CF2A947112004A7A59 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2D02A947112004A7A59 /* go-model-download */,
+				9A9BA2D32A947112004A7A59 /* go-whisper */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		9A9BA2D02A947112004A7A59 /* go-model-download */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2D12A947112004A7A59 /* context.go */,
+				9A9BA2D22A947112004A7A59 /* main.go */,
+			);
+			path = "go-model-download";
+			sourceTree = "<group>";
+		};
+		9A9BA2D32A947112004A7A59 /* go-whisper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2D42A947112004A7A59 /* color.go */,
+				9A9BA2D52A947112004A7A59 /* flags.go */,
+				9A9BA2D62A947112004A7A59 /* process.go */,
+				9A9BA2D72A947112004A7A59 /* main.go */,
+			);
+			path = "go-whisper";
+			sourceTree = "<group>";
+		};
+		9A9BA2DA2A947112004A7A59 /* pkg */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2DB2A947112004A7A59 /* whisper */,
+			);
+			path = pkg;
+			sourceTree = "<group>";
+		};
+		9A9BA2DB2A947112004A7A59 /* whisper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2DC2A947112004A7A59 /* consts.go */,
+				9A9BA2DD2A947112004A7A59 /* interface.go */,
+				9A9BA2DE2A947112004A7A59 /* context_test.go */,
+				9A9BA2DF2A947112004A7A59 /* doc.go */,
+				9A9BA2E02A947112004A7A59 /* context.go */,
+				9A9BA2E12A947112004A7A59 /* model.go */,
+			);
+			path = whisper;
+			sourceTree = "<group>";
+		};
+		9A9BA2E32A947112004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2E42A947112004A7A59 /* README.md */,
+				9A9BA2E52A947112004A7A59 /* gradle */,
+				9A9BA2E92A947113004A7A59 /* gradlew */,
+				9A9BA2EA2A947113004A7A59 /* build.gradle */,
+				9A9BA2EB2A947113004A7A59 /* gradle.properties */,
+				9A9BA2EC2A947113004A7A59 /* gradlew.bat */,
+				9A9BA2ED2A947113004A7A59 /* settings.gradle */,
+				9A9BA2EE2A947113004A7A59 /* .idea */,
+				9A9BA2F02A947113004A7A59 /* src */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2E52A947112004A7A59 /* gradle */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2E62A947113004A7A59 /* wrapper */,
+			);
+			path = gradle;
+			sourceTree = "<group>";
+		};
+		9A9BA2E62A947113004A7A59 /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2E72A947113004A7A59 /* gradle-wrapper.jar */,
+				9A9BA2E82A947113004A7A59 /* gradle-wrapper.properties */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		9A9BA2EE2A947113004A7A59 /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2EF2A947113004A7A59 /* uiDesigner.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		9A9BA2F02A947113004A7A59 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F12A947113004A7A59 /* test */,
+				9A9BA2F92A947113004A7A59 /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9A9BA2F12A947113004A7A59 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F22A947113004A7A59 /* java */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		9A9BA2F22A947113004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F32A947113004A7A59 /* io */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2F32A947113004A7A59 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F42A947113004A7A59 /* github */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		9A9BA2F42A947113004A7A59 /* github */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F52A947113004A7A59 /* ggerganov */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		9A9BA2F52A947113004A7A59 /* ggerganov */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F62A947113004A7A59 /* whispercpp */,
+			);
+			path = ggerganov;
+			sourceTree = "<group>";
+		};
+		9A9BA2F62A947113004A7A59 /* whispercpp */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2F72A947113004A7A59 /* WhisperCppTest.java */,
+				9A9BA2F82A947113004A7A59 /* WhisperJnaLibraryTest.java */,
+			);
+			path = whispercpp;
+			sourceTree = "<group>";
+		};
+		9A9BA2F92A947113004A7A59 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FA2A947113004A7A59 /* java */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		9A9BA2FA2A947113004A7A59 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FB2A947113004A7A59 /* io */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		9A9BA2FB2A947113004A7A59 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FC2A947113004A7A59 /* github */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		9A9BA2FC2A947113004A7A59 /* github */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FD2A947113004A7A59 /* ggerganov */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		9A9BA2FD2A947113004A7A59 /* ggerganov */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FE2A947113004A7A59 /* whispercpp */,
+			);
+			path = ggerganov;
+			sourceTree = "<group>";
+		};
+		9A9BA2FE2A947113004A7A59 /* whispercpp */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA2FF2A947113004A7A59 /* WhisperCppJnaLibrary.java */,
+				9A9BA3002A947113004A7A59 /* callbacks */,
+				9A9BA3052A947113004A7A59 /* WhisperCpp.java */,
+				9A9BA3062A947113004A7A59 /* params */,
+				9A9BA30E2A947113004A7A59 /* model */,
+				9A9BA3142A947113004A7A59 /* ggml */,
+				9A9BA3172A947113004A7A59 /* WhisperContext.java */,
+			);
+			path = whispercpp;
+			sourceTree = "<group>";
+		};
+		9A9BA3002A947113004A7A59 /* callbacks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3012A947113004A7A59 /* WhisperEncoderBeginCallback.java */,
+				9A9BA3022A947113004A7A59 /* WhisperNewSegmentCallback.java */,
+				9A9BA3032A947113004A7A59 /* WhisperProgressCallback.java */,
+				9A9BA3042A947113004A7A59 /* WhisperLogitsFilterCallback.java */,
+			);
+			path = callbacks;
+			sourceTree = "<group>";
+		};
+		9A9BA3062A947113004A7A59 /* params */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3072A947113004A7A59 /* WhisperFullParams.java */,
+				9A9BA3082A947113004A7A59 /* WhisperSamplingStrategy.java */,
+				9A9BA3092A947113004A7A59 /* BeamSearchParams.java */,
+				9A9BA30A2A947113004A7A59 /* GreedyParams.java */,
+				9A9BA30B2A947113004A7A59 /* WhisperHParams.java */,
+				9A9BA30C2A947113004A7A59 /* WhisperFilters.java */,
+				9A9BA30D2A947113004A7A59 /* CBool.java */,
+			);
+			path = params;
+			sourceTree = "<group>";
+		};
+		9A9BA30E2A947113004A7A59 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA30F2A947113004A7A59 /* WhisperModelLoader.java */,
+				9A9BA3102A947113004A7A59 /* WhisperTokenData.java */,
+				9A9BA3112A947113004A7A59 /* EModel.java */,
+				9A9BA3122A947113004A7A59 /* WhisperModel.java */,
+				9A9BA3132A947113004A7A59 /* WhisperState.java */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9A9BA3142A947113004A7A59 /* ggml */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3152A947113004A7A59 /* GgmlType.java */,
+				9A9BA3162A947113004A7A59 /* GgmlTensor.java */,
+			);
+			path = ggml;
+			sourceTree = "<group>";
+		};
+		9A9BA3182A947113004A7A59 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		9A9BA3192A947113004A7A59 /* javascript */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA31A2A947113004A7A59 /* emscripten.cpp */,
+				9A9BA31B2A947113004A7A59 /* CMakeLists.txt */,
+				9A9BA31C2A947113004A7A59 /* libwhisper.worker.js */,
+				9A9BA31D2A947113004A7A59 /* README.md */,
+				9A9BA31E2A947113004A7A59 /* .gitignore */,
+				9A9BA31F2A947113004A7A59 /* package.json */,
+				9A9BA3202A947113004A7A59 /* package-tmpl.json */,
+				9A9BA3212A947113004A7A59 /* whisper.js */,
+			);
+			path = javascript;
+			sourceTree = "<group>";
+		};
+		9A9BA3222A947113004A7A59 /* ruby */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3232A947113004A7A59 /* ext */,
+				9A9BA3282A947113004A7A59 /* tests */,
+			);
+			path = ruby;
+			sourceTree = "<group>";
+		};
+		9A9BA3232A947113004A7A59 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3242A947113004A7A59 /* .gitignore */,
+				9A9BA3252A947113004A7A59 /* ruby_whisper.h */,
+				9A9BA3262A947113004A7A59 /* extconf.rb */,
+				9A9BA3272A947113004A7A59 /* ruby_whisper.cpp */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		9A9BA3282A947113004A7A59 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3292A947113004A7A59 /* test_whisper.rb */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		9A9BA39B2A968D6D004A7A59 /* libsamplerate */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA39C2A968D6D004A7A59 /* configure.ac */,
+				9A9BA39D2A968D6D004A7A59 /* INSTALL */,
+				9A9BA39E2A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA39F2A968D6D004A7A59 /* libsamplerate.xcodeproj */,
+				9A9BA3A22A968D6D004A7A59 /* cmake */,
+				9A9BA3AB2A968D6D004A7A59 /* ChangeLog */,
+				9A9BA3AC2A968D6D004A7A59 /* libsamplerate.spec.in */,
+				9A9BA3AD2A968D6D004A7A59 /* AUTHORS */,
+				9A9BA3AE2A968D6D004A7A59 /* include */,
+				9A9BA3B02A968D6D004A7A59 /* tests */,
+				9A9BA3C62A968D6D004A7A59 /* docs */,
+				9A9BA3DD2A968D6D004A7A59 /* config.h.cmake */,
+				9A9BA3DE2A968D6D004A7A59 /* Makefile.am */,
+				9A9BA3DF2A968D6D004A7A59 /* README.md */,
+				9A9BA3E02A968D6D004A7A59 /* COPYING */,
+				9A9BA3E12A968D6D004A7A59 /* Octave */,
+				9A9BA3E62A968D6D004A7A59 /* NEWS */,
+				9A9BA3E72A968D6D004A7A59 /* .gitignore */,
+				9A9BA3E82A968D6D004A7A59 /* examples */,
+				9A9BA3EE2A968D6D004A7A59 /* samplerate.pc.in */,
+				9A9BA3EF2A968D6D004A7A59 /* .github */,
+				9A9BA3F22A968D6D004A7A59 /* .gitattributes */,
+				9A9BA3F32A968D6D004A7A59 /* m4 */,
+				9A9BA3FF2A968D6D004A7A59 /* Win32 */,
+				9A9BA4012A968D6D004A7A59 /* autogen.sh */,
+				9A9BA4022A968D6D004A7A59 /* src */,
+			);
+			name = libsamplerate;
+			path = Classes/libsamplerate;
+			sourceTree = "<group>";
+		};
+		9A9BA3A02A968D6D004A7A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9BA3A22A968D6D004A7A59 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3A32A968D6D004A7A59 /* ClipMode.cmake */,
+				9A9BA3A42A968D6D004A7A59 /* SampleRateConfig.cmake.in */,
+				9A9BA3A52A968D6D004A7A59 /* FindOpus.cmake */,
+				9A9BA3A62A968D6D004A7A59 /* FindSndFile.cmake */,
+				9A9BA3A72A968D6D004A7A59 /* FindOgg.cmake */,
+				9A9BA3A82A968D6D004A7A59 /* FindVorbis.cmake */,
+				9A9BA3A92A968D6D004A7A59 /* FindFLAC.cmake */,
+				9A9BA3AA2A968D6D004A7A59 /* FindFFTW3.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		9A9BA3AE2A968D6D004A7A59 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3AF2A968D6D004A7A59 /* samplerate.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9A9BA3B02A968D6D004A7A59 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3B12A968D6D004A7A59 /* misc_test.c */,
+				9A9BA3B22A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA3B32A968D6D004A7A59 /* throughput_test.c */,
+				9A9BA3B42A968D6D004A7A59 /* util.c */,
+				9A9BA3B52A968D6D004A7A59 /* varispeed_test.c */,
+				9A9BA3B62A968D6D004A7A59 /* callback_test.c */,
+				9A9BA3B72A968D6D004A7A59 /* downsample_test.c */,
+				9A9BA3B82A968D6D004A7A59 /* multichan_throughput_test.c */,
+				9A9BA3B92A968D6D004A7A59 /* clone_test.c */,
+				9A9BA3BA2A968D6D004A7A59 /* snr_bw_test.c */,
+				9A9BA3BB2A968D6D004A7A59 /* reset_test.c */,
+				9A9BA3BC2A968D6D004A7A59 /* src-evaluate.c */,
+				9A9BA3BD2A968D6D004A7A59 /* streaming_test.c */,
+				9A9BA3BE2A968D6D004A7A59 /* util.h */,
+				9A9BA3BF2A968D6D004A7A59 /* float_short_test.c */,
+				9A9BA3C02A968D6D004A7A59 /* calc_snr.c */,
+				9A9BA3C12A968D6D004A7A59 /* callback_hang_test.c */,
+				9A9BA3C22A968D6D004A7A59 /* simple_test.c */,
+				9A9BA3C32A968D6D004A7A59 /* multi_channel_test.c */,
+				9A9BA3C42A968D6D004A7A59 /* nullptr_test.c */,
+				9A9BA3C52A968D6D004A7A59 /* termination_test.c */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		9A9BA3C62A968D6D004A7A59 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3C72A968D6D004A7A59 /* SRC.css */,
+				9A9BA3C82A968D6D004A7A59 /* license.md */,
+				9A9BA3C92A968D6D004A7A59 /* api_misc.md */,
+				9A9BA3CA2A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA3CB2A968D6D004A7A59 /* api.md */,
+				9A9BA3CC2A968D6D004A7A59 /* bugs.md */,
+				9A9BA3CD2A968D6D004A7A59 /* SRC.png */,
+				9A9BA3CE2A968D6D004A7A59 /* api_callback.md */,
+				9A9BA3CF2A968D6D004A7A59 /* foo_dsp_src9.png */,
+				9A9BA3D02A968D6D004A7A59 /* history.md */,
+				9A9BA3D12A968D6D004A7A59 /* faq.md */,
+				9A9BA3D22A968D6D004A7A59 /* quality.md */,
+				9A9BA3D32A968D6D004A7A59 /* _layouts */,
+				9A9BA3D52A968D6D004A7A59 /* api_full.md */,
+				9A9BA3D62A968D6D004A7A59 /* lists.md */,
+				9A9BA3D72A968D6D004A7A59 /* index.md */,
+				9A9BA3D82A968D6D004A7A59 /* _config.yml */,
+				9A9BA3D92A968D6D004A7A59 /* win32.md */,
+				9A9BA3DA2A968D6D004A7A59 /* paypal.png */,
+				9A9BA3DB2A968D6D004A7A59 /* download.md */,
+				9A9BA3DC2A968D6D004A7A59 /* api_simple.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		9A9BA3D32A968D6D004A7A59 /* _layouts */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3D42A968D6D004A7A59 /* default.html */,
+			);
+			path = _layouts;
+			sourceTree = "<group>";
+		};
+		9A9BA3E12A968D6D004A7A59 /* Octave */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3E22A968D6D004A7A59 /* generate_filter.m */,
+				9A9BA3E32A968D6D004A7A59 /* Readme.md */,
+				9A9BA3E42A968D6D004A7A59 /* make_filter.m */,
+				9A9BA3E52A968D6D004A7A59 /* measure_filter.m */,
+			);
+			path = Octave;
+			sourceTree = "<group>";
+		};
+		9A9BA3E82A968D6D004A7A59 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3E92A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA3EA2A968D6D004A7A59 /* audio_out.h */,
+				9A9BA3EB2A968D6D004A7A59 /* varispeed-play.c */,
+				9A9BA3EC2A968D6D004A7A59 /* audio_out.c */,
+				9A9BA3ED2A968D6D004A7A59 /* timewarp-file.c */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		9A9BA3EF2A968D6D004A7A59 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3F02A968D6D004A7A59 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		9A9BA3F02A968D6D004A7A59 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3F12A968D6D004A7A59 /* build.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		9A9BA3F32A968D6D004A7A59 /* m4 */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA3F42A968D6D004A7A59 /* clip_mode.m4 */,
+				9A9BA3F52A968D6D004A7A59 /* ax_append_compile_flags.m4 */,
+				9A9BA3F62A968D6D004A7A59 /* ax_compiler_vendor.m4 */,
+				9A9BA3F72A968D6D004A7A59 /* ax_check_link_flag.m4 */,
+				9A9BA3F82A968D6D004A7A59 /* ax_check_compile_flag.m4 */,
+				9A9BA3F92A968D6D004A7A59 /* ax_append_link_flags.m4 */,
+				9A9BA3FA2A968D6D004A7A59 /* ax_recursive_eval.m4 */,
+				9A9BA3FB2A968D6D004A7A59 /* ax_compiler_version.m4 */,
+				9A9BA3FC2A968D6D004A7A59 /* ax_require_defined.m4 */,
+				9A9BA3FD2A968D6D004A7A59 /* ax_append_flag.m4 */,
+				9A9BA3FE2A968D6D004A7A59 /* check_signal.m4 */,
+			);
+			path = m4;
+			sourceTree = "<group>";
+		};
+		9A9BA3FF2A968D6D004A7A59 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA4002A968D6D004A7A59 /* libsamplerate-0.def */,
+			);
+			path = Win32;
+			sourceTree = "<group>";
+		};
+		9A9BA4022A968D6D004A7A59 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BA4032A968D6D004A7A59 /* samplerate.c */,
+				9A9BA4042A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA4052A968D6D004A7A59 /* src_sinc.c */,
+				9A9BA4062A968D6D004A7A59 /* src_zoh.c */,
+				9A9BA4072A968D6D004A7A59 /* src_linear.c */,
+				9A9BA4082A968D6D004A7A59 /* common.h */,
+				9A9BA4092A968D6D004A7A59 /* fastest_coeffs.h */,
+				9A9BA40A2A968D6D004A7A59 /* Version_script.in */,
+				9A9BA40B2A968D6D004A7A59 /* mid_qual_coeffs.h */,
+				9A9BA40C2A968D6D004A7A59 /* high_qual_coeffs.h */,
+				9A9BA40D2A968D6D004A7A59 /* check_asm.sh */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A7171F528C7DEEC3FA3CAA71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98E74DEA5D07F673DB59B323 /* Pods-Runner.debug.xcconfig */,
+				F416C757FA85AB2371DEB83F /* Pods-Runner.release.xcconfig */,
+				184562B6D1448498848ED8B1 /* Pods-Runner.profile.xcconfig */,
+				FC3FF9BCA903C4AC0B93ACD6 /* Pods-RunnerTests.debug.xcconfig */,
+				95D1EAEF850A978F7FDF544C /* Pods-RunnerTests.release.xcconfig */,
+				A6E708F8B8206E5E9195AE85 /* Pods-RunnerTests.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		331C8080294A63A400263BE5 /* RunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331C8087294A63A400263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */;
+			buildPhases = (
+				823D2225880E5EC41C723011 /* [CP] Check Pods Manifest.lock */,
+				331C807D294A63A400263BE5 /* Sources */,
+				331C807F294A63A400263BE5 /* Resources */,
+				AF2AF364C5258B87BC9938C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331C8086294A63A400263BE5 /* PBXTargetDependency */,
+			);
+			name = RunnerTests;
+			productName = RunnerTests;
+			productReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97C146ED1CF9000F007C117D /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				AF95B3D6C699C297F1C1464F /* [CP] Check Pods Manifest.lock */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EA1CF9000F007C117D /* Sources */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				9705A1C41CF9048500538489 /* Embed Frameworks */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				EAEC2BAAB7A011A1D3A2275A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C146E61CF9000F007C117D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					331C8080294A63A400263BE5 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 97C146ED1CF9000F007C117D;
+					};
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9A9BA3A02A968D6D004A7A59 /* Products */;
+					ProjectRef = 9A9BA39F2A968D6D004A7A59 /* libsamplerate.xcodeproj */;
+				},
+				{
+					ProductGroup = 9A9BA1AD2A947112004A7A59 /* Products */;
+					ProjectRef = 9A9BA1AC2A947112004A7A59 /* whisper.cpp.xcodeproj */;
+				},
+				{
+					ProductGroup = 9A9BA2582A947112004A7A59 /* Products */;
+					ProjectRef = 9A9BA2572A947112004A7A59 /* whisper.objc.xcodeproj */;
+				},
+				{
+					ProductGroup = 9A9BA2122A947112004A7A59 /* Products */;
+					ProjectRef = 9A9BA2112A947112004A7A59 /* whisper.swiftui.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+				331C8080294A63A400263BE5 /* RunnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9A9BA3302A947113004A7A59 /* whisper.objc.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = whisper.objc.app;
+			remoteRef = 9A9BA32F2A947113004A7A59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A9BA3332A947113004A7A59 /* whisper.swiftui.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = whisper.swiftui.app;
+			remoteRef = 9A9BA3322A947113004A7A59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		331C807F294A63A400263BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C146EC1CF9000F007C117D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}",
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+		};
+		823D2225880E5EC41C723011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunnerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9740EEB61CF901F6004384FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+		};
+		AF95B3D6C699C297F1C1464F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEC2BAAB7A011A1D3A2275A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		331C807D294A63A400263BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C146EA1CF9000F007C117D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9BA4142A968DF7004A7A59 /* src_sinc.c in Sources */,
+				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				9A9BA4152A968DF7004A7A59 /* src_zoh.c in Sources */,
+				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				9A9BA3502A9474B5004A7A59 /* ggml.c in Sources */,
+				9A9BA3462A947474004A7A59 /* whisper.cpp in Sources */,
+				9A9BA4122A968DF7004A7A59 /* src_linear.c in Sources */,
+				9A9BA4132A968DF7004A7A59 /* samplerate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		331C8086294A63A400263BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97C146ED1CF9000F007C117D /* Runner */;
+			targetProxy = 331C8085294A63A400263BE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C146FB1CF9000F007C117D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C147001CF9000F007C117D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9A9BA25F2A947112004A7A59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9BA2602A947112004A7A59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9A9BA2612A947112004A7A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9BA2622A947112004A7A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249021D3217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		249021D4217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 39LSK8JYU8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		331C8088294A63A400263BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3FF9BCA903C4AC0B93ACD6 /* Pods-RunnerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = Debug;
+		};
+		331C8089294A63A400263BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D1EAEF850A978F7FDF544C /* Pods-RunnerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = Release;
+		};
+		331C808A294A63A400263BE5 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E708F8B8206E5E9195AE85 /* Pods-RunnerTests.profile.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = Profile;
+		};
+		97C147031CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97C147041CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97C147061CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 39LSK8JYU8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		97C147071CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 39LSK8JYU8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterWhisperIo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		331C8087294A63A400263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331C8088294A63A400263BE5 /* Debug */,
+				331C8089294A63A400263BE5 /* Release */,
+				331C808A294A63A400263BE5 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147031CF9000F007C117D /* Debug */,
+				97C147041CF9000F007C117D /* Release */,
+				249021D3217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147061CF9000F007C117D /* Debug */,
+				97C147071CF9000F007C117D /* Release */,
+				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+}

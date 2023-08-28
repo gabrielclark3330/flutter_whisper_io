@@ -1,0 +1,192 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9A9BA1772A947112004A7A59 /* whisper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whisper.h; sourceTree = "<group>"; };
+		9A9BA1782A947112004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA1792A947112004A7A59 /* ggml-opencl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-opencl.h"; sourceTree = "<group>"; };
+		9A9BA17A2A947112004A7A59 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9A9BA17B2A947112004A7A59 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		9A9BA17C2A947112004A7A59 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9A9BA17D2A947112004A7A59 /* tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tests; sourceTree = "<group>"; };
+		9A9BA17E2A947112004A7A59 /* openvino */ = {isa = PBXFileReference; lastKnownFileType = folder; path = openvino; sourceTree = "<group>"; };
+		9A9BA17F2A947112004A7A59 /* ggml-metal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = "ggml-metal.metal"; sourceTree = "<group>"; };
+		9A9BA1802A947112004A7A59 /* ggml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
+		9A9BA1812A947112004A7A59 /* ggml-opencl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ggml-opencl.cpp"; sourceTree = "<group>"; };
+		9A9BA1822A947112004A7A59 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		9A9BA1832A947112004A7A59 /* ggml-metal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ggml-metal.m"; sourceTree = "<group>"; };
+		9A9BA1842A947112004A7A59 /* whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = whisper.cpp; sourceTree = "<group>"; };
+		9A9BA1852A947112004A7A59 /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		9A9BA1862A947112004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA1872A947112004A7A59 /* coreml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = coreml; sourceTree = "<group>"; };
+		9A9BA1882A947112004A7A59 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		9A9BA1892A947112004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA18A2A947112004A7A59 /* extra */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extra; sourceTree = "<group>"; };
+		9A9BA18B2A947112004A7A59 /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = "<group>"; };
+		9A9BA18C2A947112004A7A59 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
+		9A9BA18D2A947112004A7A59 /* ggml-cuda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-cuda.h"; sourceTree = "<group>"; };
+		9A9BA18E2A947112004A7A59 /* bindings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bindings; sourceTree = "<group>"; };
+		9A9BA18F2A947112004A7A59 /* .git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .git; sourceTree = "<group>"; };
+		9A9BA1902A947112004A7A59 /* ggml-metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ggml-metal.h"; sourceTree = "<group>"; };
+		9A9BA1912A947112004A7A59 /* ggml-cuda.cu */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ggml-cuda.cu"; sourceTree = "<group>"; };
+		9A9BA1922A947112004A7A59 /* ggml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggml.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9A9BA1712A947112004A7A59 = {
+			isa = PBXGroup;
+			children = (
+				9A9BA1772A947112004A7A59 /* whisper.h */,
+				9A9BA1782A947112004A7A59 /* CMakeLists.txt */,
+				9A9BA1792A947112004A7A59 /* ggml-opencl.h */,
+				9A9BA17A2A947112004A7A59 /* LICENSE */,
+				9A9BA17B2A947112004A7A59 /* cmake */,
+				9A9BA17C2A947112004A7A59 /* Makefile */,
+				9A9BA17D2A947112004A7A59 /* tests */,
+				9A9BA17E2A947112004A7A59 /* openvino */,
+				9A9BA17F2A947112004A7A59 /* ggml-metal.metal */,
+				9A9BA1802A947112004A7A59 /* ggml.c */,
+				9A9BA1812A947112004A7A59 /* ggml-opencl.cpp */,
+				9A9BA1822A947112004A7A59 /* models */,
+				9A9BA1832A947112004A7A59 /* ggml-metal.m */,
+				9A9BA1842A947112004A7A59 /* whisper.cpp */,
+				9A9BA1852A947112004A7A59 /* .gitmodules */,
+				9A9BA1862A947112004A7A59 /* README.md */,
+				9A9BA1872A947112004A7A59 /* coreml */,
+				9A9BA1882A947112004A7A59 /* samples */,
+				9A9BA1892A947112004A7A59 /* .gitignore */,
+				9A9BA18A2A947112004A7A59 /* extra */,
+				9A9BA18B2A947112004A7A59 /* examples */,
+				9A9BA18C2A947112004A7A59 /* .github */,
+				9A9BA18D2A947112004A7A59 /* ggml-cuda.h */,
+				9A9BA18E2A947112004A7A59 /* bindings */,
+				9A9BA18F2A947112004A7A59 /* .git */,
+				9A9BA1902A947112004A7A59 /* ggml-metal.h */,
+				9A9BA1912A947112004A7A59 /* ggml-cuda.cu */,
+				9A9BA1922A947112004A7A59 /* ggml.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9A9BA1762A947112004A7A59 /* whisper.cpp */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 9A9BA1932A947112004A7A59 /* Build configuration list for PBXLegacyTarget "whisper.cpp" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/gabrielclark/Documents/projects/flutter_whisper_io/ios/Classes/whisper.cpp;
+			dependencies = (
+			);
+			name = whisper.cpp;
+			passBuildSettingsInEnvironment = 1;
+			productName = whisper.cpp;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		9A9BA1722A947112004A7A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = 9A9BA1752A947112004A7A59 /* Build configuration list for PBXProject "whisper.cpp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A9BA1712A947112004A7A59;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9BA1762A947112004A7A59 /* whisper.cpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		9A9BA1732A947112004A7A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		9A9BA1742A947112004A7A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		9A9BA1942A947112004A7A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = whisper.cpp;
+			};
+			name = Debug;
+		};
+		9A9BA1952A947112004A7A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = whisper.cpp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A9BA1752A947112004A7A59 /* Build configuration list for PBXProject "whisper.cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9BA1732A947112004A7A59 /* Debug */,
+				9A9BA1742A947112004A7A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9BA1932A947112004A7A59 /* Build configuration list for PBXLegacyTarget "whisper.cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9BA1942A947112004A7A59 /* Debug */,
+				9A9BA1952A947112004A7A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9BA1722A947112004A7A59 /* Project object */;
+}

@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9A9BA37E2A968D6D004A7A59 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		9A9BA37F2A968D6D004A7A59 /* INSTALL */ = {isa = PBXFileReference; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		9A9BA3802A968D6D004A7A59 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9A9BA3812A968D6D004A7A59 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		9A9BA3822A968D6D004A7A59 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		9A9BA3832A968D6D004A7A59 /* libsamplerate.spec.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = libsamplerate.spec.in; sourceTree = "<group>"; };
+		9A9BA3842A968D6D004A7A59 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		9A9BA3852A968D6D004A7A59 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		9A9BA3862A968D6D004A7A59 /* tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tests; sourceTree = "<group>"; };
+		9A9BA3872A968D6D004A7A59 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		9A9BA3882A968D6D004A7A59 /* config.h.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.cmake; sourceTree = "<group>"; };
+		9A9BA3892A968D6D004A7A59 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		9A9BA38A2A968D6D004A7A59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9BA38B2A968D6D004A7A59 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		9A9BA38C2A968D6D004A7A59 /* Octave */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Octave; sourceTree = "<group>"; };
+		9A9BA38D2A968D6D004A7A59 /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		9A9BA38E2A968D6D004A7A59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9A9BA38F2A968D6D004A7A59 /* examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = examples; sourceTree = "<group>"; };
+		9A9BA3902A968D6D004A7A59 /* samplerate.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = samplerate.pc.in; sourceTree = "<group>"; };
+		9A9BA3912A968D6D004A7A59 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
+		9A9BA3922A968D6D004A7A59 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		9A9BA3932A968D6D004A7A59 /* m4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = m4; sourceTree = "<group>"; };
+		9A9BA3942A968D6D004A7A59 /* .git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .git; sourceTree = "<group>"; };
+		9A9BA3952A968D6D004A7A59 /* Win32 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Win32; sourceTree = "<group>"; };
+		9A9BA3962A968D6D004A7A59 /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		9A9BA3972A968D6D004A7A59 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9A9BA3782A968D6D004A7A59 = {
+			isa = PBXGroup;
+			children = (
+				9A9BA37E2A968D6D004A7A59 /* configure.ac */,
+				9A9BA37F2A968D6D004A7A59 /* INSTALL */,
+				9A9BA3802A968D6D004A7A59 /* CMakeLists.txt */,
+				9A9BA3812A968D6D004A7A59 /* cmake */,
+				9A9BA3822A968D6D004A7A59 /* ChangeLog */,
+				9A9BA3832A968D6D004A7A59 /* libsamplerate.spec.in */,
+				9A9BA3842A968D6D004A7A59 /* AUTHORS */,
+				9A9BA3852A968D6D004A7A59 /* include */,
+				9A9BA3862A968D6D004A7A59 /* tests */,
+				9A9BA3872A968D6D004A7A59 /* docs */,
+				9A9BA3882A968D6D004A7A59 /* config.h.cmake */,
+				9A9BA3892A968D6D004A7A59 /* Makefile.am */,
+				9A9BA38A2A968D6D004A7A59 /* README.md */,
+				9A9BA38B2A968D6D004A7A59 /* COPYING */,
+				9A9BA38C2A968D6D004A7A59 /* Octave */,
+				9A9BA38D2A968D6D004A7A59 /* NEWS */,
+				9A9BA38E2A968D6D004A7A59 /* .gitignore */,
+				9A9BA38F2A968D6D004A7A59 /* examples */,
+				9A9BA3902A968D6D004A7A59 /* samplerate.pc.in */,
+				9A9BA3912A968D6D004A7A59 /* .github */,
+				9A9BA3922A968D6D004A7A59 /* .gitattributes */,
+				9A9BA3932A968D6D004A7A59 /* m4 */,
+				9A9BA3942A968D6D004A7A59 /* .git */,
+				9A9BA3952A968D6D004A7A59 /* Win32 */,
+				9A9BA3962A968D6D004A7A59 /* autogen.sh */,
+				9A9BA3972A968D6D004A7A59 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9A9BA37D2A968D6D004A7A59 /* libsamplerate */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 9A9BA3982A968D6D004A7A59 /* Build configuration list for PBXLegacyTarget "libsamplerate" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/gabrielclark/Documents/projects/flutter_whisper_io/ios/Classes/libsamplerate;
+			dependencies = (
+			);
+			name = libsamplerate;
+			passBuildSettingsInEnvironment = 1;
+			productName = libsamplerate;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		9A9BA3792A968D6D004A7A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = 9A9BA37C2A968D6D004A7A59 /* Build configuration list for PBXProject "libsamplerate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A9BA3782A968D6D004A7A59;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9BA37D2A968D6D004A7A59 /* libsamplerate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		9A9BA37A2A968D6D004A7A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		9A9BA37B2A968D6D004A7A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		9A9BA3992A968D6D004A7A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libsamplerate;
+			};
+			name = Debug;
+		};
+		9A9BA39A2A968D6D004A7A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = libsamplerate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A9BA37C2A968D6D004A7A59 /* Build configuration list for PBXProject "libsamplerate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9BA37A2A968D6D004A7A59 /* Debug */,
+				9A9BA37B2A968D6D004A7A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9BA3982A968D6D004A7A59 /* Build configuration list for PBXLegacyTarget "libsamplerate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9BA3992A968D6D004A7A59 /* Debug */,
+				9A9BA39A2A968D6D004A7A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9BA3792A968D6D004A7A59 /* Project object */;
+}
