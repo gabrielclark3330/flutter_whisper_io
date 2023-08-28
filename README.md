@@ -8,5 +8,7 @@ You can just run this project on a recent iPhone simulator or iPhone like you wo
 
 ## Dependancys
 [libsamplerate](https://github.com/libsndfile/libsamplerate) for resampling audio input
+
 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) for translating audio
-dart's [audio_streamer](https://pub.dev/packages/audio_streamer) package for IOS/Android PCM audio stream access
+
+Dart's [audio_streamer](https://pub.dev/packages/audio_streamer) package for IOS/Android PCM audio stream access
