@@ -1,4 +1,5 @@
 # flutter_whisper_io
+![Simulator Screenshot - iPhone 14 Pro Max - 2023-08-29 at 11 21 35](https://github.com/gabrielclark3330/flutter_whisper_io/assets/59420727/15786412-c90d-4423-83a9-259ec500e8ac)
 
 A flutter project to test running Whisper.cpp locally on IOS and Android.
 
