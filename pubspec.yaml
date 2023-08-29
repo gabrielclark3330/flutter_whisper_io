@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   audio_streamer: ^3.0.0
   ffi: ^2.1.0
+  path_provider: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +63,9 @@ ffigen:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  assets:
+    - 'assets/ggml-base.en.bin'
+    
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

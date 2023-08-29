@@ -1,8 +1,9 @@
 import 'dart:ffi' as ffi;
+import 'dart:io';
 import 'package:ffi/ffi.dart';
 
 import 'generated_bindings.dart';
-
+import 'package:path_provider/path_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:audio_streamer/audio_streamer.dart';
 
@@ -81,7 +82,7 @@ class _MyAppState extends State<MyApp> {
     return resampledOutput;
   }
 
-  void translateTextFromPCM(List<double> pcmArray) {
+  void translateTextFromPCM(List<double> pcmArray) async {
     List<double> resampledOutput = downSamplePCM(_audio, sampleRate, 16000);
 
     // Copy the float values to the unmanaged memory.
@@ -91,8 +92,16 @@ class _MyAppState extends State<MyApp> {
       resampled_data.elementAt(i).value = resampledOutput[i];
     }
 
-    String modelPath =
-        "/Users/gabrielclark/Documents/projects/flutter_whisper_io/ios/Classes/whisper.cpp/models/ggml-base.en.bin";
+    final ByteData data = await rootBundle.load('assets/ggml-base.en.bin');
+    final List<int> bytes = data.buffer.asUint8List();
+
+    final Directory dir = await getApplicationDocumentsDirectory();
+    final File file = File('${dir.path}/ggml-base.en.bin');
+
+    await file.writeAsBytes(bytes, flush: true);
+
+    String modelPath = file.path;
+    //"/Users/gabrielclark/Documents/projects/flutter_whisper_io/ios/Classes/whisper.cpp/models/ggml-base.en.bin";
     final pathPointer = modelPath.toNativeUtf8().cast<ffi.Char>();
     final ctx = nativeLib.whisper_init_from_file(pathPointer);
     var wparams = nativeLib.whisper_full_default_params(
@@ -121,7 +130,7 @@ class _MyAppState extends State<MyApp> {
         segmentTextIndex = segmentTextIndex + 1;
       }
     }
-
+    print(internalTranslatedText);
     setState(() {
       translatedText = internalTranslatedText;
     });
@@ -136,7 +145,6 @@ class _MyAppState extends State<MyApp> {
   void onAudio(List<double> buffer) async {
     _audio.addAll(buffer);
     sampleRate = await streamer.actualSampleRate;
-    print(sampleRate);
     setState(() {
       secondsRecorded = _audio.length.toDouble() / sampleRate;
     });
@@ -152,7 +160,6 @@ class _MyAppState extends State<MyApp> {
 
   void start() async {
     try {
-      print("start");
       // start streaming using default sample rate of 44100 Hz
       streamer.start(onAudio, handleError);
 
