@@ -44,14 +44,14 @@ typedef float	coeff_t ;
 typedef int _CHECK_SHIFT_BITS[2 * (SHIFT_BITS < sizeof (increment_t) * 8 - 1) - 1]; /* sanity check. */
 
 #ifdef ENABLE_SINC_FAST_CONVERTER
+#endif
   #include "fastest_coeffs.h"
-#endif
 #ifdef ENABLE_SINC_MEDIUM_CONVERTER
+#endif
   #include "mid_qual_coeffs.h"
-#endif
 #ifdef ENABLE_SINC_BEST_CONVERTER
-  #include "high_qual_coeffs.h"
 #endif
+#include "high_qual_coeffs.h"
 
 typedef struct
 {	int		sinc_magic_marker ;
@@ -218,26 +218,26 @@ sinc_filter_new (int converter_type, int channels)
 		switch (converter_type)
 		{
 #ifdef ENABLE_SINC_FAST_CONVERTER
+#endif
 		case SRC_SINC_FASTEST :
 			priv->coeffs = fastest_coeffs.coeffs ;
 			priv->coeff_half_len = ARRAY_LEN (fastest_coeffs.coeffs) - 2 ;
 			priv->index_inc = fastest_coeffs.increment ;
 			break ;
-#endif
 #ifdef ENABLE_SINC_MEDIUM_CONVERTER
+#endif
 		case SRC_SINC_MEDIUM_QUALITY :
 			priv->coeffs = slow_mid_qual_coeffs.coeffs ;
 			priv->coeff_half_len = ARRAY_LEN (slow_mid_qual_coeffs.coeffs) - 2 ;
 			priv->index_inc = slow_mid_qual_coeffs.increment ;
 			break ;
-#endif
 #ifdef ENABLE_SINC_BEST_CONVERTER
+#endif
 		case SRC_SINC_BEST_QUALITY :
 			priv->coeffs = slow_high_qual_coeffs.coeffs ;
 			priv->coeff_half_len = ARRAY_LEN (slow_high_qual_coeffs.coeffs) - 2 ;
 			priv->index_inc = slow_high_qual_coeffs.increment ;
 			break ;
-#endif
 		}
 
 		priv->b_len = 3 * (int) psf_lrint ((priv->coeff_half_len + 2.0) / priv->index_inc * SRC_MAX_RATIO + 1) ;

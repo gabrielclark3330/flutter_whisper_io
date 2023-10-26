@@ -64,9 +64,8 @@ class _MyAppState extends State<MyApp> {
     src_data.ref.output_frames = output_frames;
     src_data.ref.src_ratio = conversion_factor;
 
-    int error = nativeLib.src_simple(
-        src_data, 4, 1); //(data, poor quality linear converter, 1 channel)
-    // Using SINC best quality converter and 1 channel (mono)
+    int error = nativeLib.src_simple(src_data, 0,
+        1); //(data, 0 highest quality conversion, 1 channel) poor quality linear converter 4
     if (error != 0) {
       print("Error converting: ${error}");
     }
@@ -89,6 +88,7 @@ class _MyAppState extends State<MyApp> {
     ffi.Pointer<ffi.Float> resampled_data =
         calloc<ffi.Float>(resampledOutput.length);
     for (var i = 0; i < resampledOutput.length; i++) {
+      //print(resampledOutput[i]);
       resampled_data.elementAt(i).value = resampledOutput[i];
     }
 
@@ -118,9 +118,10 @@ class _MyAppState extends State<MyApp> {
     final nSegments = nativeLib.whisper_full_n_segments(ctx);
     for (var i = 0; i < nSegments; i++) {
       final segmentText = nativeLib.whisper_full_get_segment_text(ctx, i);
+
+      // print text from char pointer
       ffi.Pointer<ffi.Char> charPtf =
           ffi.Pointer.fromAddress(segmentText.address);
-      // print text from char pointer
       var segmentTextIndex = 0;
       while (charPtf.elementAt(segmentTextIndex).value != 0 &&
           segmentTextIndex < 100) {
@@ -130,7 +131,7 @@ class _MyAppState extends State<MyApp> {
         segmentTextIndex = segmentTextIndex + 1;
       }
     }
-    print(internalTranslatedText);
+
     setState(() {
       translatedText = internalTranslatedText;
     });
