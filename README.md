@@ -7,7 +7,7 @@ A flutter project to test running Whisper.cpp locally on IOS and Android.
 
 You can just run this project on a recent iPhone simulator or iPhone like you would any dart project
 
-## Dependancys
+## Dependencies
 [libsamplerate](https://github.com/libsndfile/libsamplerate) for resampling audio input
 
 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) for translating audio
